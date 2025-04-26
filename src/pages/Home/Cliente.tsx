@@ -2,20 +2,21 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 
-import imageOne from './../assets/service/imageOne.jpg';
-import imageTwo from './../assets/service/imageTwo.jpg';
-import imageThree from './../assets/service/imageThree.jpg';
+// Importando as imagens corretamente
+import imageOne from '../../assets/service/imageOne.jpg'; // Caminho correto
+import imageTwo from '../../assets/service/imageTwo.jpg'; // Caminho correto
+import imageThree from '../../assets/service/imageThree.jpg'; // Caminho correto
 
 export function Clientes() {
   return (
     <div 
       className="py-16 bg-gray-100" 
       style={{
-        backgroundImage: 'url(/path/to/your-image.jpg)', // Caminho da sua imagem de fundo
+        backgroundImage: 'url(../../assets/home/bg.jpg)', // Caminho da sua imagem de fundo
         backgroundSize: 'cover', 
         backgroundPosition: 'center',
       }}
-    >
+    > 
       <div className="max-w-screen-xl mx-auto px-4">
         {/* Título da seção */}
         <div className="text-center mb-12">

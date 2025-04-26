@@ -1,33 +1,36 @@
-import ServiceCard from '@/components/ServiceCard'
-import { Separator } from '../../components/ui/separator'
-import styles from './Home.module.css'
-import { Flame, HardHat, Wrench } from 'lucide-react'
-import { Clientes } from '@/components/Cliente'
+import ServiceCard from '@/pages/Home/ServiceCard';
+import { Separator } from '../../components/ui/separator';
+import styles from './Home.module.css';
+import { Flame, HardHat, Wrench } from 'lucide-react';
+import { Clientes } from '@/pages/Home/Cliente';
+
+// Importando as imagens para os cards de serviço
+import imageOne from '../../assets/service/imageOne.jpg'; // Caminho correto
+import imageTwo from '../../assets/service/imageTwo.jpg'; // Caminho correto
+import imageThree from '../../assets/service/imageThree.jpg'; // Caminho correto
 
 export function Home() {
   return (
     <>
-
-    {/* banner hero */}
+      {/* banner hero */}
       <div className={styles.hero}>
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
-            <span className={styles.hat}><p>Confie na experiência</p></span>
-            <div className={styles.title}>
-              <h1>SEGURANÇA QUE PROTEGE <br /> VIDAS E PATRIMÔNIOS</h1>
-              <p>Soluções completas em prevenção e combate a incêndios <br /> para empresas, indústrias e edificações comerciais.</p>
-            </div>
-            <div><a href="/contact" className={styles.ctaButton}>Solicitar Orçamento</a></div>
+          <span className={styles.hat}><p>Confie na experiência</p></span>
+          <div className={styles.title}>
+            <h1>SEGURANÇA QUE PROTEGE <br /> VIDAS E PATRIMÔNIOS</h1>
+            <p>Soluções completas em prevenção e combate a incêndios <br /> para empresas, indústrias e edificações comerciais.</p>
+          </div>
+          <div><a href="/contact" className={styles.ctaButton}>Solicitar Orçamento</a></div>
         </div>
       </div>  
 
-    {/* serviços */}
-
+      {/* serviços */}
       <div className={styles.services}>
         <div className={styles.service}>
           <div className={styles.hat}>
             <span className="text-2xl">Serviços</span>
-            <Separator orientation="vertical"  className="h-10 bg-gray-300" />
+            <Separator orientation="vertical" className="h-10 bg-gray-300" />
             <p className="text-xs px-1">Soluções personalizadas <br /> para segurança intransigente.</p>
           </div>
 
@@ -38,7 +41,7 @@ export function Home() {
           <ServiceCard
             title="Instalação de Sistemas Hidráulicos Contra Incêndio"
             description="Projetamos e implementamos redes de hidrantes, sprinklers, bombas de incêndio e sistemas de pressurização."
-            imageSrc="../src/assets/service/imageThree.jpg"
+            imageSrc={imageThree}  // Usando a imagem importada corretamente
             ctaText="Agendar Orçamento"
             ctaLink="#"
             icon={<Flame className="text-white text-2xl" />}
@@ -46,7 +49,7 @@ export function Home() {
           <ServiceCard
             title="Manutenção e Inspeção Técnica"
             description="Realizamos inspeções preventivas e corretivas, garantindo que cada equipamento funcione com precisão milimétrica."
-            imageSrc="../src/assets/service/imageTwo.jpg"
+            imageSrc={imageTwo}  // Usando a imagem importada corretamente
             ctaText="Agendar Orçamento"
             ctaLink="#"
             icon={<Wrench className="text-white text-2xl" />}
@@ -54,7 +57,7 @@ export function Home() {
           <ServiceCard
             title="Consultoria e Projetos Especiais"
             description="Desenvolvemos soluções sob medida para edificações de grande porte, assegurando conformidade com as regulamentações vigentes."
-            imageSrc="../src/assets/service/imageOne.jpg"
+            imageSrc={imageOne}  // Usando a imagem importada corretamente
             ctaText="Agendar Orçamento"
             ctaLink="#"
             icon={<HardHat className="text-white text-2xl" />}
@@ -63,5 +66,5 @@ export function Home() {
         <Clientes />
       </div>
     </>
-  )
+  );
 }
