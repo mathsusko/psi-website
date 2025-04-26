@@ -1,5 +1,5 @@
 import ServiceCard from '@/components/ServiceCard'
-import { Separator } from '../components/ui/separator'
+import { Separator } from '../../components/ui/separator'
 import styles from './Home.module.css'
 import { Flame, HardHat, Wrench } from 'lucide-react'
 import { Clientes } from '@/components/Cliente'
