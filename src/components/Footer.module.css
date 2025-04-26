@@ -1,0 +1,41 @@
+footer {
+  background: var(--gray-800);
+}
+
+.footer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  color: white;
+}
+
+.footer .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .body .links {
+  display: flex;
+  gap: 32px;
+}
+
+.body .logo {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.body .logo img {
+  width: 200px;
+}
+
+.empresa h2 {
+  font-size: 22px !important;
+}
+
+.empresa p {
+  opacity: 40%;
+}
+
+

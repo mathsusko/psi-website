@@ -1,84 +1,82 @@
 @font-face {
-    font-family: 'SF Pro';
-    src: url('/fonts/SF-Pro.ttf') format('truetype');
-    font-display: swap;
-} 
-
+  font-family: 'SF Pro';
+  src: url('/fonts/SF-Pro.ttf') format('truetype');
+  font-display: swap;
+}
 
 .hero {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Ajuste de altura conforme necessário */
-    background-image: url('../assets/home/bgHome.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff; /* Texto claro sobre o fundo escuro */
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ajuste de altura conforme necessário */
+  background-image: url('../../assets/home/bgHome.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Texto claro sobre o fundo escuro */
 }
 
 .heroOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Sobreposição para melhorar legibilidade */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Sobreposição para melhorar legibilidade */
 }
 
 .heroContent {
-    max-width: 1440px;
-    display: block;
-    width: 100%;
-    padding: 20px;
-    z-index: 1; /* Garante que o conteúdo fique acima da sobreposição */
+  max-width: 1440px;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  z-index: 1; /* Garante que o conteúdo fique acima da sobreposição */
 }
 .heroContent .footer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .heroContent .hat {
-    display: inline-block;
-    background: var(--red-900);
-    padding: 4px 12px;
-    border-radius: 2rem;
+  display: inline-block;
+  background: var(--red-900);
+  padding: 4px 12px;
+  border-radius: 2rem;
 }
-.hat p{
-    font-size: 12px;
+.hat p {
+  font-size: 12px;
 }
 .hero .title {
-    padding: 22px 0;
+  padding: 22px 0;
 }
 .hero .title h1 {
-    font-family: 'SF Pro', sans-serif;
-    font-stretch: expanded;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 12px;
-    line-height: 100%;
+  font-family: 'SF Pro', sans-serif;
+  font-stretch: expanded;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  line-height: 100%;
 }
 
-.hero .title p { 
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.25rem;
+.hero .title p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
 }
 
 .hero .ctaButton {
-    background-color: var(--red-900); /* Cor do botão */
-    color: white;
-    padding: 12px 32px;
-    border-radius: 50px;
-    font-size: 1rem;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s ease;
+  background-color: var(--red-900); /* Cor do botão */
+  color: white;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 .hero .cta-button:hover {
-    background-color: var(--primary-color); /* Cor ao passar o mouse */
+  background-color: var(--primary-color); /* Cor ao passar o mouse */
 }
-
 
 /* CSS para a Section Serviços */
 .services {
@@ -96,13 +94,15 @@
   margin-bottom: 3rem;
 }
 
-.service .hat {
+.service .hat,
+.hatClient,
+.hatDif {
   display: flex;
   gap: 8px;
   align-items: center;
 }
 
-.service .hat>.hatEsq {
+.service .hat > .hatEsq {
   padding: 0 8px;
   border-left: 1px solid #d1d5db;
 }
@@ -139,4 +139,253 @@
   .grid {
     grid-template-columns: 1fr 1fr 1fr; /* Para telas grandes, 3 colunas */
   }
+}
+
+/* Clientes */
+
+.clients {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* Ajuste de altura conforme necessário */
+  background-image: url('../../assets/home/cliente/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Texto claro sobre o fundo escuro */
+}
+.clientOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Sobreposição para melhorar legibilidade */
+}
+
+.clientBody {
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titleTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 550px;
+}
+
+.clientBody .clientTitle {
+  font-family: 'SF Pro', sans-serif;
+  font-stretch: expanded;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 100%;
+}
+
+.sliderClient {
+  position: relative;
+  width: 100%;
+  flex: 1;
+
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  padding: 40px 0; /* adiciona espaço vertical */
+}
+
+.sliderTrack {
+  display: flex;
+  gap: 4rem;
+  animation: scroll 20s linear infinite;
+}
+
+.sliderClient img {
+  width: 150px; /* aumentei de 100px para 150px */
+  margin-right: 40px; /* espaçamento maior */
+}
+
+/* @keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+} */
+
+/* Diferenciais */
+
+.dif {
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.difBody {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 750px;
+}
+
+.difHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.difBody .difTitle {
+  font-family: 'SF Pro', sans-serif;
+  font-stretch: expanded;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 100%;
+}
+
+.titleDif {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.titleDif > p {
+  max-width: 550px;
+}
+
+.difCards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  border-radius: 12px;
+  background: var(--red-900);
+  margin-top: 40px;
+}
+
+.difCards .card {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  width: 100%;
+}
+
+.card img {
+  border-radius: 12px;
+  max-width: 529px;
+  object-fit: cover;
+}
+
+.textCard {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+.textCard h2 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.textCard p {
+  margin-bottom: 32px;
+}
+
+.textCard a {
+  color: var(--gray-200);
+}
+
+.textCard a:hover {
+  text-decoration: underline;
+  color: var(--white);
+}
+
+/* cta */
+
+.cta {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* Ajuste de altura conforme necessário */
+  background-image: url('../../assets/home/cta/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ctaBody {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: flex;
+  gap: 44px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 733.97px;
+  gap: 45px;
+}
+
+.ctaHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.ctaHeader .hatCta {
+  padding: 4px 12px;
+  border-radius: 22px;
+  color: var(--white);
+  font-size: 12px;
+  max-width: 254px;
+  background: var(--red-900);
+  object-fit: cover;
+}
+
+.titleCta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.ctaHeader .titleCta h1 {
+  font-size: 48px;
+  line-height: 100%;
+  font-family: 'Sf Pro';
+  font-stretch: expanded;
+  font-weight: 600;
+}
+
+.ctaHeader .titleCta p {
+  font-size: 22px;
+}
+
+.ctaBody .buttonCta {
+  background: var(--red-900);
+  max-width: 335px;
+  padding: 12px 32px;
+  border-radius: 22px;
+  color: white;
+}
+
+.ctaBody .buttonCta a {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
 }
