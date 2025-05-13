@@ -99,7 +99,7 @@ export function Home() {
         <div className={styles.clientBody}>
           <div className={styles.clientHeader}>
             <div className={styles.hatClient}>
-              <span className="text-2xl">Clientes</span>
+              <span className="text-2xl">Clientess</span>
               <Separator
                 orientation="vertical"
                 className="h-10 bg-gray-300"
