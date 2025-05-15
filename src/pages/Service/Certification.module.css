@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/fonts/SF-Pro.ttf') format('truetype');
+  font-display: swap;
+}
+
+.servicesInclude {
+  margin: 120px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  padding: 0 16px; /* mantém respiro lateral também aqui */
+  width: 100%;
+  box-sizing: border-box;
+}
+.servicesInclude h1 {
+  font-family: 'SF Pro', sans-serif;
+  font-stretch: expanded;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.serviceCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+  gap: 40px;
+  padding: 0 16px;
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .serviceCards {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .serviceCards {
+    grid-template-columns: 1fr; /* 1 coluna em celulares */
+  }
+}

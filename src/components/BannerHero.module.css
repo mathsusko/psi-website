@@ -8,11 +8,12 @@
   position: relative;
   width: 100%;
   height: 100vh; /* Ajuste de altura conforme necessário */
-  background-image: url('../../assets/service/bg.jpg');
+  background-image: url('../../assets/home/bgHome.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
+
   align-items: center;
   color: #fff; /* Texto claro sobre o fundo escuro */
 }
@@ -30,8 +31,8 @@
   max-width: 1440px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 32px;
+  width: 100%;
   padding: 20px;
   z-index: 1; /* Garante que o conteúdo fique acima da sobreposição */
 }
@@ -44,14 +45,16 @@
   background: var(--red-900);
   padding: 4px 12px;
   border-radius: 2rem;
+  align-self: flex-start; /* <-- força a não se esticar */
+  width: fit-content; /* <-- garante contração ao conteúdo */
+  max-width: 100%;
 }
 .hat p {
   font-size: 12px;
 }
 .hero .title {
   padding: 22px 0;
-  text-align: center;
-  max-width: 936.36px;
+  width: 1000px;
 }
 .hero .title h1 {
   font-family: 'SF Pro', sans-serif;
@@ -60,6 +63,7 @@
   font-weight: bold;
   margin-bottom: 12px;
   line-height: 100%;
+  text-transform: uppercase;
 }
 
 .hero .title p {
@@ -82,73 +86,33 @@
   background-color: var(--primary-color); /* Cor ao passar o mouse */
 }
 
-.services {
-  max-width: 1440px;
-  margin: 72px auto;
-}
-
-.serviceTitle {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  width: 700px;
-}
-.serviceTitle h1 {
-  font-size: 40px;
-  font-family: 'SF Pro', sans-serif;
-  font-stretch: expanded;
-  font-weight: 700;
-
-  line-height: 100%;
-}
-.serviceTitle p {
-  font-size: 24px;
-  line-height: 100%;
-}
-
-.serviceCards {
-  display: flex;
-  flex-wrap: wrap; /* Permite quebra em telas pequenas */
-  justify-content: center;
-  gap: 32px;
-  padding: 16px;
-}
-
-.serviceCards .card {
-  padding: 12px;
-  border-radius: 12px;
-  background: linear-gradient(180deg, #7c0e0e 0%, #1a1a1a 100%);
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-  margin-top: 64px;
-  width: calc(25% - 24px); /* 4 cards por linha com gap */
-  min-width: 250px; /* Para evitar ficar muito estreito */
-  box-sizing: border-box;
-}
-
-@media (max-width: 1024px) {
-  .serviceCards .card {
-    width: calc(50% - 24px); /* 2 por linha em tablets */
+@media (max-width: 390px) {
+  .heroContent {
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 24px;
   }
-}
 
-@media (max-width: 640px) {
-  .serviceCards .card {
-    width: 100%; /* 1 por linha em mobile */
+  .hero .title {
+    width: 100%;
+    padding: 16px 0;
   }
-}
-.card img {
-  border-radius: 12px;
-  width: 100%;
-  height: auto;
-}
 
-.card .info {
-  color: var(--white);
-  padding: 12px;
-}
+  .hero .title h1 {
+    font-size: 1.75rem; /* Reduzido para caber melhor */
+    line-height: 1.2;
+  }
 
-.info span {
-  font-size: 12px;
+  .hero .title p {
+    font-size: 1rem;
+  }
+
+  .heroContent .hat p {
+    font-size: 10px;
+  }
+
+  .hero .ctaButton {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
 }

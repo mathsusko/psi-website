@@ -1,0 +1,43 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+.card img {
+  border-radius: 12px;
+  height: 205.15px;
+  width: 100%;
+  object-fit: cover; /* ou use 'contain' se quiser encaixar sem cortar */
+  object-position: center;
+  display: block;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+}
+
+.info .title {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.title p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.info .icon {
+  padding: 8px;
+  border-radius: 100px;
+  background: rgba(255, 0, 0, 0.8);
+  color: white;
+}
