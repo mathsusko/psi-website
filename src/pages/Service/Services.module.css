@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/fonts/SF-Pro.ttf') format('truetype');
+  font-display: swap;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ajuste de altura conforme necessário */
+  background-image: url('../../assets/service/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Texto claro sobre o fundo escuro */
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Sobreposição para melhorar legibilidade */
+}
+
+.heroContent {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  padding: 20px;
+  z-index: 1; /* Garante que o conteúdo fique acima da sobreposição */
+}
+.heroContent .footer {
+  display: flex;
+  justify-content: center;
+}
+.heroContent .hat {
+  display: inline-block;
+  background: var(--red-900);
+  padding: 4px 12px;
+  border-radius: 2rem;
+  
+}
+.hat p {
+  font-size: 12px;
+}
+.hero .title {
+  padding: 22px 0;
+  text-align: center;
+  max-width: 936.36px;
+}
+.hero .title h1 {
+  font-family: 'SF Pro', sans-serif;
+  font-stretch: expanded;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  line-height: 100%;
+}
+
+.hero .title p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+}
+
+.hero .ctaButton {
+  background-color: var(--red-900); /* Cor do botão */
+  color: white;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.hero .cta-button:hover {
+  background-color: var(--primary-color); /* Cor ao passar o mouse */
+}

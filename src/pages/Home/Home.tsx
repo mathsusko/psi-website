@@ -11,7 +11,8 @@ import imageOneDif from '../../assets/home/dif/imageOneDif.jpg'
 import imageTwoDif from '../../assets/home/dif/imageTwoDif.jpg'
 import imageThreeDif from '../../assets/home/dif/imageThreeDif.jpg'
 import imageFourDif from '../../assets/home/dif/imageFourDif.jpg'
-import logo2 from '../../assets/logo2.png'
+import ClientCarousel from '../../components/ClientCarousel';
+
 import { Footer } from '@/components/Footer'
 
 export function Home() {
@@ -58,12 +59,21 @@ export function Home() {
             </p>
           </div>
 
+         <div className="flex justify-between">
           <div className="w-[450px]">
             <p>
               Nosso portfólio de serviços é projetado para atender as mais rigorosas
               normas técnicas e garantir a máxima eficiência na prevenção de incêndios.
             </p>
           </div>
+
+          <div className="flex flex-col justify-end">
+            <p>
+              <a href="#" className="text-red-600 hover:underline">Ver mais</a>
+            </p>
+          </div>
+        </div>
+
         </div>
 
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -99,7 +109,7 @@ export function Home() {
         <div className={styles.clientBody}>
           <div className={styles.clientHeader}>
             <div className={styles.hatClient}>
-              <span className="text-2xl">Clientess</span>
+              <span className="text-2xl">Clientes</span>
               <Separator
                 orientation="vertical"
                 className="h-10 bg-gray-300"
@@ -119,159 +129,142 @@ export function Home() {
             </div>
           </div>
 
-          <div className={styles.sliderClient}>
-            <div className={styles.sliderTrack}>
-              <img
-                src={logo2}
-                alt="Imagem 1"
-              />
-              <img
-                src={logo2}
-                alt="Imagem 2"
-              />
-              <img
-                src={logo2}
-                alt="Imagem 3"
-              />
-              <img
-                src={logo2}
-                alt="Imagem 4"
-              />
-              <img
-                src={logo2}
-                alt="Imagem 4"
-              />
-              <img
-                src={logo2}
-                alt="Imagem 4"
-              />
-            </div>
-          </div>
+          <ClientCarousel />
         </div>
       </div>
 
       <div className={styles.dif}>
-        <div className={styles.difBody}>
-          <div className={styles.difHeader}>
-            <div className={styles.hatDif}>
-              <span className="text-2xl">Nossos diferenciais</span>
-              <Separator
-                orientation="vertical"
-                className="h-10 bg-gray-300"
+
+        <div className={styles.bodyDif}>
+          <div className={styles.difBody}>
+            <div className={styles.difHeader}>
+              <div className={styles.hatDif}>
+                <span className="text-2xl">Nossos diferenciais</span>
+                <Separator
+                  orientation="vertical"
+                  className="h-10 bg-gray-300"
+                />
+                <p className="text-xs px-1">
+                  Não basta estar dentro das normas. <br /> É preciso estar à frente delas.
+                </p>
+              </div>
+
+              <div className={styles.titleDif}>
+                <h1 className={styles.difTitle}>
+                  Compromisso com a Segurança. Excelência em Cada Detalhe.
+                </h1>
+                <p>
+                  Nosso portfólio de serviços é projetado para atender as mais rigorosas
+                  normas técnicas e garantir a máxima eficiência na prevenção de incêndios.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center gap-32 text-white">
+            {/* Card 1 */}
+            <div className="flex flex-col lg:flex-row gap-8">
+              <img
+                src={imageOneDif}
+                alt="Imagem diferencial 1"
+                className="w-[600px] rounded-xl object-cover"
               />
-              <p className="text-xs px-1">
-                Não basta estar dentro das normas. <br /> É preciso estar à frente delas.
-              </p>
+              <div className="w-[600px]">
+                <h2 className="text-2xl font-semibold mb-2">14 anos de expertise no setor</h2>
+                <p className="text-white">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi dolorem
+                  animi, saepe omnis eligendi nam illum molestiae corrupti perferendis.
+                </p>
+              </div>
             </div>
 
-            <div className={styles.titleDif}>
-              <h1 className={styles.difTitle}>
-                Compromisso com a Segurança. Excelência em Cada Detalhe.
-              </h1>
-              <p>
-                Nosso portfólio de serviços é projetado para atender as mais rigorosas
-                normas técnicas e garantir a máxima eficiência na prevenção de incêndios.
-              </p>
+            {/* Card 2 - imagem à direita */}
+            <div className="flex flex-col lg:flex-row-reverse gap-8">
+              <img
+                src={imageTwoDif}
+                alt="Imagem diferencial 2"
+                className="w-[600px] rounded-xl object-cover"
+              />
+              <div className="w-[600px]">
+                <h2 className="text-2xl font-semibold mb-2">
+                  Equipe de engenheiros e <br /> técnicos especializados
+                </h2>
+                <p className="text-white">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi dolorem
+                  animi, saepe omnis eligendi nam illum molestiae corrupti perferendis.
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className={styles.difCards}>
-          <div className={styles.card}>
-            <img
-              src={imageOneDif}
-              alt="imagem diferencial um"
-            />
-            <div className={styles.textCard}>
-              <h2>14 anos de expertise no setor</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi dolorem
-                animi, saepe omnis eligendi nam illum molestiae corrupti perferendis.
-              </p>
-              <a href="#">Saiba mais</a>
-            </div>
-          </div>
 
-          <div className={styles.card}>
-            <img
-              src={imageTwoDif}
-              alt="imagem diferencial um"
-            />
-            <div className={styles.textCard}>
-              <h2>
-                Equipe de engenheiros e <br /> técnicos especializados
-              </h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi dolorem
-                animi, saepe omnis eligendi nam illum molestiae corrupti perferendis.
-              </p>
-              <a href="#">Saiba mais</a>
+            {/* Card 3 */}
+            <div className="flex flex-col lg:flex-row gap-8">
+              <img
+                src={imageThreeDif}
+                alt="Imagem diferencial 3"
+                className="w-[600px] rounded-xl object-cover"
+              />
+              <div className="w-[600px]">
+                <h2 className="text-2xl font-semibold mb-2">
+                  Conformidade com <br /> ABNT NBR, NFPA e IT CBM
+                </h2>
+                <p className="text-white">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi dolorem
+                  animi, saepe omnis eligendi nam illum molestiae corrupti perferendis.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className={styles.card}>
-            <img
-              src={imageThreeDif}
-              alt="imagem diferencial um"
-            />
-            <div className={styles.textCard}>
-              <h2>
-                Conformidade com <br /> ABNT NBR, NFPA e IT CBM
-              </h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi dolorem
-                animi, saepe omnis eligendi nam illum molestiae corrupti perferendis.
-              </p>
-              <a href="#">Saiba mais</a>
+            {/* Card 4 - imagem à direita */}
+            <div className="flex flex-col lg:flex-row-reverse gap-8">
+              <img
+                src={imageFourDif}
+                alt="Imagem diferencial 4"
+                className="w-[600px] rounded-xl object-cover"
+              />
+              <div className="w-[600px]">
+                <h2 className="text-2xl font-semibold mb-2">
+                  Atendimento emergencial e <br /> suporte técnico 24/7
+                </h2>
+                <p className="text-white">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi dolorem
+                  animi, saepe omnis eligendi nam illum molestiae corrupti perferendis.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className={styles.card}>
-            <img
-              src={imageFourDif}
-              alt="imagem diferencial um"
-            />
-            <div className={styles.textCard}>
-              <h2>
-                Atendimento emergencial e <br /> suporte técnico 24/7
-              </h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi dolorem
-                animi, saepe omnis eligendi nam illum molestiae corrupti perferendis.
-              </p>
-              <a href="#">Saiba mais</a>
+          <div className={styles.cta}>
+            <div className={styles.ctaBody}>
+              <div className={styles.ctaHeader}>
+                <div className={styles.hatCta}>
+                  <span className="size-3">Nossos diferenciais</span>
+                </div>
+
+                <div className={styles.titleCta}>
+                  <h1 className={styles.ctaTitle}>
+                    Planeje agora <br /> sua segurança
+                  </h1>
+                  <p>
+                    Cada projeto é único. Nossa equipe está pronta para entender sua
+                    necessidade e oferecer a solução mais eficiente e segura.
+                  </p>
+                </div>
+              </div>
+
+              <button className={styles.buttonCta}>
+                <a
+                  href="#"
+                  className="size-6"
+                >
+                  <MessageCircle /> Agendar Orçamento
+                </a>
+              </button>
             </div>
           </div>
-        </div>
+       </div>
       </div>
 
-      <div className={styles.cta}>
-        <div className={styles.ctaBody}>
-          <div className={styles.ctaHeader}>
-            <div className={styles.hatCta}>
-              <span className="size-3">Nossos diferenciais</span>
-            </div>
-
-            <div className={styles.titleCta}>
-              <h1 className={styles.ctaTitle}>
-                Planeje agora <br /> sua segurança
-              </h1>
-              <p>
-                Cada projeto é único. Nossa equipe está pronta para entender sua
-                necessidade e oferecer a solução mais eficiente e segura.
-              </p>
-            </div>
-          </div>
-
-          <button className={styles.buttonCta}>
-            <a
-              href="#"
-              className="size-6"
-            >
-              <MessageCircle /> Agendar Orçamento
-            </a>
-          </button>
-        </div>
-      </div>
+     
 
       <Footer />
     </>

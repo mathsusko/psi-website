@@ -1,14 +1,14 @@
 import { Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home/Home';
-import { Services } from './pages/Services';
+import { Services } from './pages/Service/Services';
 import { WhoWeAre } from './pages/WhoWeAre';
 import { Budget } from './pages/Budget';
 import { Clients } from './pages/Clients';
 import { Contact } from './pages/Contact';
-import { ProjectConsultancy } from './pages/services/ProjectConsultancy';
-import { SystemInstallation } from './pages/services/SystemInstallation';
-import { MaintenanceTests } from './pages/services/MaintenanceTests';
-import { Certification } from './pages/services/Certification';
+import { ProjectConsultancy } from './pages/Service/ProjectConsultancy';
+import { SystemInstallation } from './pages/Service/SystemInstallation';
+import { MaintenanceTests } from './pages/Service/MaintenanceTests';
+import { Certification } from './pages/Service/Certification';
 
 export function AppRoutes() {
   return (

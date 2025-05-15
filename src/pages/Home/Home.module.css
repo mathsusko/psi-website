@@ -100,6 +100,7 @@
   display: flex;
   gap: 8px;
   align-items: center;
+  color: var(--white)
 }
 
 .service .hat > .hatEsq {
@@ -145,6 +146,9 @@
 
 .clients {
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  border-radius: 12px;
   width: 100%;
   height: 70vh; /* Ajuste de altura conforme necessário */
   background-image: url('../../assets/home/cliente/bg.jpg');
@@ -161,15 +165,15 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Sobreposição para melhorar legibilidade */
+  /* background-color: rgba(0, 0, 0, 0.5);  */
+  /* Sobreposição para melhorar legibilidade */
 }
 
 .clientBody {
   width: 100%;
   height: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 80px 20px;
+  
+  padding:32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -212,26 +216,31 @@
   margin-right: 40px; /* espaçamento maior */
 }
 
-/* @keyframes scroll {
+@keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);
   }
-} */
+}
 
 /* Diferenciais */
 
 .dif {
-  width: 100%;
-  height: 100%;
+  margin-top: 89px;
+  padding: 80px 20px;
+
+  background-image: url('../../assets/home/bgCta.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;       /* 👈 cobre toda a área */
+  background-position: center;  /* 👈 centraliza */
+  background-position: bottom;
+  min-height: 100vh;            /* 👈 garante que cubra a viewport */
+}
+.bodyDif {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 80px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .difBody {
@@ -239,6 +248,7 @@
   flex-direction: column;
   gap: 12px;
   max-width: 750px;
+  margin-bottom: 100px;
 }
 
 .difHeader {
@@ -259,6 +269,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  color: var(--white)
 }
 
 .titleDif > p {
@@ -268,10 +279,10 @@
 .difCards {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 89px;
   padding: 40px;
   border-radius: 12px;
-  background: var(--red-900);
+
   margin-top: 40px;
 }
 
@@ -304,7 +315,7 @@
 }
 
 .textCard a {
-  color: var(--gray-200);
+  color: var(--white);
 }
 
 .textCard a:hover {
@@ -315,17 +326,10 @@
 /* cta */
 
 .cta {
-  position: relative;
-  width: 100%;
-  height: 70vh; /* Ajuste de altura conforme necessário */
-  background-image: url('../../assets/home/cta/logo.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ margin-top: 64px;
 }
 .ctaBody {
+  color: var(--white);
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;

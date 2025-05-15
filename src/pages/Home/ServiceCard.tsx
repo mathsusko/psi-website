@@ -20,11 +20,11 @@ const ServiceCard: FC<ServiceCardProps> = ({ title, description, imageSrc, ctaTe
           <h3 className="text-xl font-bold">{title}</h3>
         </div>
         <p className="text-sm mt-2">{description}</p>
-        <button className="mt-8 py-4 border border-red-600 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+        {/* <button className="mt-8 py-4 border border-red-600 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
             <a href={ctaLink} className="inline-block text-red-600 font-semibold transition-all duration-300 ease-in-out ">
                 {ctaText}
             </a>
-        </button>
+        </button> */}
       </div>
     </div>
   );
