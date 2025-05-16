@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home/Home';
 import { Services } from './pages/Service/Services';
 import { WhoWeAre } from './pages/WhoWeAre';
-import { Budget } from './pages/Budget';
+
 import { Clients } from './pages/Clients';
 import { Contact } from './pages/Contact';
 import { ProjectConsultancy } from './pages/Service/ProjectConsultancy';
@@ -17,7 +17,7 @@ export function AppRoutes() {
       <Route path="/" element={<Home />} />
       <Route path="/services" element={<Services />} />
       <Route path="/who-we-are" element={<WhoWeAre />} />
-      <Route path="/budget" element={<Budget />} />
+
       <Route path="/clients" element={<Clients />} />
       <Route path="/contact" element={<Contact />} />
 

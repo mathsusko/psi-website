@@ -32,14 +32,7 @@ export function Header() {
               Quem Somos
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/budget"
-              className={({ isActive }) => (isActive ? styles.active : undefined)}
-            >
-              Orçamento
-            </NavLink>
-          </li>
+
           <li>
             <NavLink
               to="/clients"

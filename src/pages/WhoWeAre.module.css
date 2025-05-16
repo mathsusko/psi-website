@@ -1,0 +1,283 @@
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/fonts/SF-Pro.ttf') format('truetype');
+  font-display: swap;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ajuste de altura conforme necessário */
+  background-image: url('../src/assets/whoweare/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Texto claro sobre o fundo escuro */
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Sobreposição para melhorar legibilidade */
+}
+
+.heroContent {
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+  width: 100%;
+  padding: 20px;
+  z-index: 1; /* Garante que o conteúdo fique acima da sobreposição */
+}
+.heroContent .footer {
+  display: flex;
+  justify-content: center;
+}
+.heroContent .hat {
+  display: inline-block;
+  background: var(--red-900);
+  padding: 4px 12px;
+  border-radius: 2rem;
+}
+.hat p {
+  font-size: 12px;
+}
+.hero .title {
+  padding: 22px 0;
+}
+.hero .title h1 {
+  font-family: 'SF Pro', sans-serif;
+  font-stretch: expanded;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.hero .title p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+}
+
+.hero .ctaButton {
+  background-color: var(--red-900); /* Cor do botão */
+  color: white;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.hero .cta-button:hover {
+  background-color: var(--primary-color); /* Cor ao passar o mouse */
+}
+
+.story {
+  max-width: 1440px;
+  margin: 120px auto;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.head .hat {
+  display: inline-block;
+  background: var(--red-900);
+  padding: 4px 12px;
+  border-radius: 2rem;
+  color: white;
+  font-size: 12px;
+  white-space: nowrap; /* impede quebra de linha */
+  width: fit-content; /* garante que contraia ao conteúdo */
+}
+.head .title {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.title h1 {
+  font-size: 40px;
+  font-family: 'SF Pro', sans-serif;
+  font-stretch: expanded;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+.title p {
+  font-size: 24px;
+  text-align: justify;
+}
+
+.cards {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.cards .card img {
+  border-radius: 12px;
+}
+
+.card .desc {
+  padding: 4px;
+  font-size: 22px;
+}
+
+.faq {
+  width: 100%;
+  height: 100vh; /* Ajuste de altura conforme necessário */
+  background-image: url('../src/assets/whoweare/bgFaq.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Texto claro sobre o fundo escuro */
+}
+
+.faq .body {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px;
+}
+
+.body .esq {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.esq .hatFaq {
+  display: inline-block;
+  background: var(--red-900);
+  padding: 4px 12px;
+  border-radius: 2rem;
+  color: white;
+  font-size: 12px;
+  white-space: nowrap; /* impede quebra de linha */
+  width: fit-content; /* garante que contraia ao conteúdo */
+}
+
+.esq .faqTitle h1 {
+  font-size: 40px;
+  font-family: 'SF Pro', sans-serif;
+  font-stretch: expanded;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.esq .faqTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.esq .faqTitle p {
+  font-size: 24px;
+}
+
+.storyy {
+  max-width: 1440px;
+  margin: 120px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.headd {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.headd .hatt {
+  display: inline-block;
+  background: var(--red-900);
+  padding: 4px 12px;
+  border-radius: 2rem;
+  color: white;
+  font-size: 12px;
+  white-space: nowrap; /* impede quebra de linha */
+  width: fit-content; /* garante que contraia ao conteúdo */
+}
+.headd .titlee {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.titlee h1 {
+  font-size: 40px;
+  font-family: 'SF Pro', sans-serif;
+  font-stretch: expanded;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+.titlee p {
+  font-size: 24px;
+  text-align: justify;
+}
+
+.servicesInclude {
+  margin: 120px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  padding: 0 16px; /* mantém respiro lateral também aqui */
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.servicesInclude h1 {
+  font-family: 'SF Pro', sans-serif;
+  font-stretch: expanded;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+.servicesInclude .security {
+  text-align: center;
+}
+
+.serviceCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+  gap: 40px;
+  padding: 0 16px;
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .serviceCards {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .serviceCards {
+    grid-template-columns: 1fr; /* 1 coluna em celulares */
+  }
+}
