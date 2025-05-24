@@ -46,6 +46,7 @@
   padding: 4px 12px;
   border-radius: 2rem;
 }
+
 .hat p {
   font-size: 12px;
 }
@@ -64,6 +65,15 @@
   font-weight: bold;
   margin-bottom: 12px;
   line-height: 100%;
+}
+@media screen and (min-width: 390px) {
+  .hero .heroContent .title > h1 {
+    font-size: 1.875rem;
+  }
+  .hero .heroContent .title > p {
+    font-size: 16px;
+    text-transform: none;
+  }
 }
 
 .hero .title p {
@@ -105,6 +115,7 @@
   text-transform: uppercase;
   line-height: 100%;
 }
+
 .serviceTitle p {
   font-size: 24px;
   line-height: 100%;
@@ -117,7 +128,29 @@
   gap: 32px;
   padding: 16px;
 }
-
+@media screen and (min-width: 390px) {
+  .serviceTitle {
+    width: 100%;
+    padding: 0 16px;
+    gap: 12px;
+  }
+  .serviceTitle h1 {
+    font-size: 22px;
+    margin-top: 12px;
+  }
+  .serviceTitle p {
+    font-size: 16px !important;
+  }
+  .serviceCards {
+    gap: 12px;
+  }
+  .serviceCards .card:nth-child {
+    margin-top: 0px;
+  }
+  .serviceCards .card {
+    margin-top: 0 !important;
+  }
+}
 .serviceCards .card {
   padding: 12px;
   border-radius: 12px;

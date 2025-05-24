@@ -1,10 +1,6 @@
 /* Estilo para o Header */
 .header {
   background: var(--white); /* Cor de fundo do cabeçalho */
-  display: flex;
-  justify-content: space-between; /* Espaça os itens do cabeçalho */
-  padding: 0.5rem 100px; /* Padding ajustado */
-  align-items: center; /* Alinha os itens verticalmente */
   position: fixed; /* Fixa o cabeçalho no topo da página */
   top: 0; /* Alinha ao topo */
   left: 0; /* Alinha à esquerda */
@@ -12,48 +8,18 @@
   z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
 }
 
-/* Estilo para a imagem do cabeçalho */
-.image {
-  width: 100%; /* Define a largura da imagem */
-}
-
-/* .image img {
-    width: 64px; 
-} */
-
 /* Estilos para a navegação */
 .nav {
   flex-grow: 1; /* A navegação ocupa o restante do espaço disponível */
 }
 
-.nav ul {
-  display: flex;
-  gap: 1rem; /* Espaço entre os itens da lista */
-  align-items: center; /* Alinha os itens verticalmente */
-  margin: 0; /* Remove margens padrões */
-  padding: 0; /* Remove padding padrões */
-}
-
-.nav ul li {
-  padding: 12px; /* Adiciona padding em cada item */
-  white-space: nowrap; /* Impede que os itens quebrem em várias linhas */
-  list-style: none; /* Remove os marcadores de lista */
+/* Estilos para o link ativo (quando o usuário estiver na página correspondente) */
+.active {
+  color: var(--red-900); /* Muda a cor ao passar o mouse */
 }
 
 /* Estilo de hover nos itens de navegação */
 .nav ul li:hover {
   color: var(--red-900); /* Muda a cor ao passar o mouse */
   border-bottom: 2px solid var(--red-900); /* Adiciona um underline */
-}
-
-/* Estilo para o link ativo (quando o usuário estiver na página correspondente) */
-.active {
-  color: var(--red-900); /* Muda a cor ao passar o mouse */
-}
-
-/* Estilos para o botão no cabeçalho */
-.button {
-  display: flex;
-  justify-content: flex-end; /* Alinha o botão à direita */
-  width: 100%; /* Define que o botão tem largura automática */
 }

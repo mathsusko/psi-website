@@ -47,7 +47,7 @@ export function Services() {
 
         <div className={styles.serviceCards}>
           <div className={styles.card}>
-            <img src={imageOne} alt="" className="h-auto w-[240px]" />
+            <img src={imageOne} alt="" className="h-auto w-[240px] object-cover" />
 
             <div className={styles.info}>
               <p>Projeto e Consultoria</p>

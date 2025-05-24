@@ -50,6 +50,7 @@
 .hat p {
   font-size: 12px;
 }
+
 .hero .title {
   padding: 22px 0;
 }
@@ -87,6 +88,7 @@
   max-width: 1440px;
   margin: 120px auto;
 }
+
 .head {
   display: flex;
   flex-direction: column;
@@ -104,7 +106,9 @@
 }
 .head .title {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas por padrão */
+  gap: 16px; /* Espaço entre os itens */
+  grid-auto-flow: row; /* Garante que o fluxo de grid seja por linha */
 }
 .title h1 {
   font-size: 40px;
@@ -119,7 +123,43 @@
   font-size: 24px;
   text-align: justify;
 }
+@media screen and (min-width: 390px) {
+  .hat p {
+    font-size: 10px;
+  }
+  .hero .title h1 {
+    font-size: 22px !important;
+  }
+  .hero .title p {
+    font-size: 16px !important;
+    text-align: center;
+  }
+  .story {
+    margin: 64px auto;
+    padding: 0 16px;
+  }
+  .head .title {
+    grid-template-columns: 1fr !important; /* Muda para 1 coluna */
+    grid-auto-flow: row; /* Os itens vão se mover para a linha seguinte */
+  }
+  .head .title h1 {
+    font-size: 22px;
+  }
+  .head .title p {
+    font-size: 16px;
+  }
+  .cards {
+    grid-template-columns: 1fr !important; /* Muda para 1 coluna */
+    grid-auto-flow: row; /* Os itens vão se mover para a linha seguinte */
+  }
+  .cards .card {
+    gap: 12px !important;
+  }
 
+  .cards .desc {
+    font-size: 16px !important;
+  }
+}
 .cards {
   margin-top: 64px;
   display: grid;
@@ -186,6 +226,21 @@
   font-weight: 600;
   text-transform: uppercase;
 }
+@media screen and (min-width: 390px) {
+  .faq .body {
+    grid-template-columns: 1fr !important; /* Muda para 1 coluna */
+    grid-auto-flow: row; /* Os itens vão se mover para a linha seguinte */
+    gap: 22px;
+    padding: 0 16px;
+  }
+
+  .esq .faqTitle h1 {
+    font-size: 22px;
+  }
+  .esq .faqTitle p {
+    font-size: 16px !important;
+  }
+}
 .esq .faqTitle {
   display: flex;
   flex-direction: column;
@@ -202,6 +257,24 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
+}
+@media screen and (min-width: 390px) {
+  .storyy {
+    margin: 64px auto;
+    padding: 0 16px;
+    gap: 0;
+  }
+  .headd .titlee {
+    grid-template-columns: 1fr !important; /* Muda para 1 coluna */
+    grid-auto-flow: row; /* Os itens vão se mover para a linha seguinte */
+    gap: 22px;
+  }
+  .titlee h1 {
+    font-size: 22px !important;
+  }
+  .titlee p {
+    font-size: 16px !important;
+  }
 }
 .headd {
   display: flex;
@@ -268,6 +341,27 @@
   width: 100%;
   max-width: 1440px;
   box-sizing: border-box;
+}
+@media screen and (min-width: 390px) {
+  .servicesInclude {
+    margin: 64px auto !important;
+    gap: 32px;
+  }
+  .servicesInclude h1 {
+    font-size: 22px !important;
+  }
+
+  .servicesInclude .security {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .serviceCards {
+    padding: 0;
+  }
+  .serviceCards {
+    gap: 22px;
+  }
 }
 
 @media (max-width: 900px) {

@@ -18,6 +18,23 @@
   gap: 64px;
 }
 
+@media screen and (min-width: 390px) {
+  .container {
+    padding: 120px 16px;
+    grid-template-columns: 1fr !important; /* Muda para 1 coluna */
+    grid-auto-flow: row; /* Os itens vão se mover para a linha seguinte */
+  }
+  .dir .title {
+    font-size: 32px !important;
+  }
+  .container .dir {
+    gap: 16px !important;
+  }
+  .dir .hat {
+    border: 1px solid black;
+  }
+}
+
 .container .dir {
   display: flex;
   flex-direction: column;
