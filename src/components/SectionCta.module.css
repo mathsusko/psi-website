@@ -63,19 +63,59 @@
   .section {
     width: 100%;
     padding: 64px 16px; /* Reduz padding para caber na tela */
-    border-radius: 8px;
+    border-radius: 0 !important;
     margin: 0 auto;
   }
 
   .body {
-    padding: 0;
     width: 100%;
     gap: 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 32px 0;
+    padding: 32px 16px !important;
+  }
+
+  .body .pill {
+    font-size: 8px;
+    padding: 4px 10px;
+  }
+  .info {
+    width: 300px !important;
+  }
+  .info h1 {
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .info p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .button {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 800px) {
+  .section {
+    width: 100%;
+    margin: 64px auto !important;
+    border-radius: 0 !important;
+  }
+
+  .body {
+    width: 100%;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0 !important;
   }
 
   .body .pill {

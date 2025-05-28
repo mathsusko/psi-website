@@ -48,12 +48,13 @@
 }
 .hero .title {
   padding: 22px 0;
+  margin-bottom: 32px;
 }
 .hero .title h1 {
   font-family: 'SF Pro', sans-serif;
   font-stretch: expanded;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 22px;
   line-height: 100%;
 }
 
@@ -146,8 +147,8 @@
 .clients {
   position: relative;
   max-width: 1440px;
-  margin: 0 auto;
-  border-radius: 12px;
+  margin: 0 auto 64px auto;
+  border-radius: 12px !important;
   width: 100%;
   height: 70vh; /* Ajuste de altura conforme necessário */
   background-image: url('../../assets/home/cliente/bg.jpg');
@@ -439,7 +440,7 @@
 
 .ctaBody .buttonCta {
   background: var(--red-900);
-  max-width: 335px;
+  max-width: auto;
   padding: 12px 32px;
   border-radius: 22px;
   color: white;

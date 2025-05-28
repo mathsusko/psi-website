@@ -5,8 +5,8 @@ import { Flame, HardHat, MessageCircle, Wrench } from 'lucide-react';
 
 // Importando as imagens para os cards de serviço
 import imageOne from '../../assets/service/imageOne.jpg'; // Caminho correto
-import imageTwo from '../../assets/service/imageTwo.jpg'; // Caminho correto
-import imageThree from '../../assets/service/imageThree.jpg'; // Caminho correto
+import imageTwo from '../../assets/service/imageTwo.png'; // Caminho correto
+import imageThree from '../../assets/service/imageThree.png'; // Caminho correto
 import imageOneDif from '../../assets/home/dif/imageOneDif.jpg';
 import imageTwoDif from '../../assets/home/dif/imageTwoDif.jpg';
 import imageThreeDif from '../../assets/home/dif/imageThreeDif.jpg';
