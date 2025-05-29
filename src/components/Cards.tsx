@@ -5,7 +5,7 @@ type CardProps = {
   image: string;
   icon: LucideIcon;
   title: string;
-  description: string;
+  description?: string;
 };
 
 export default function Cards({ image, icon: Icon, title, description }: CardProps) {
@@ -19,7 +19,7 @@ export default function Cards({ image, icon: Icon, title, description }: CardPro
           </div>
           <p>{title}</p>
         </div>
-        <p>{description}</p>
+        {description && <p>{description}</p>}
       </div>
     </div>
   );

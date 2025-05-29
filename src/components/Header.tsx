@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HiMenu, HiX } from 'react-icons/hi'; // Ícones de menu e fechar
-import { Menu } from '@headlessui/react'; // Headless UI para menu
 import psiLogo from '../assets/logo.png'; // Importe a logo
 
 export function Header() {
