@@ -6,7 +6,9 @@
 
 .section {
   max-width: 1440px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 128px auto;
 }
 
@@ -14,8 +16,8 @@
   background-image: url('../assets/service/section.jpg');
   background-size: cover;
   background-position: center;
-
-  padding: 200px 200px;
+  width: 100%;
+  padding: 200px 32px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -62,9 +64,8 @@
 @media (max-width: 390px) {
   .section {
     width: 100%;
-    padding: 64px 16px; /* Reduz padding para caber na tela */
-    border-radius: 0 !important;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0 !important;
   }
 
   .body {
@@ -75,6 +76,7 @@
     justify-content: center;
     align-items: center;
     padding: 32px 16px !important;
+    border-radius: 8px !important;
   }
 
   .body .pill {
@@ -100,10 +102,10 @@
     font-size: 0.9rem;
   }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .section {
     width: 100%;
-    margin: 64px auto !important;
+    margin: 0;
     border-radius: 0 !important;
   }
 
@@ -114,7 +116,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    paddgin: 64px 64px !important;
     border-radius: 0 !important;
   }
 
@@ -139,5 +141,23 @@
   .button {
     padding: 10px 24px;
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .section {
+    width: 100%;
+    margin: 0;
+    border-radius: 0 !important;
+  }
+  .body {
+    width: 100%;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    paddgin: 64px 64px !important;
+    border-radius: 0 !important;
   }
 }

@@ -24,7 +24,7 @@ export function Services() {
             </p>
           </div>
           <div>
-            <a href="/contact" className={styles.ctaButton}>
+            <a href="https://wa.me/5541997430276" className={styles.ctaButton} target="_blank">
               Solicitar Orçamento
             </a>
           </div>
@@ -55,6 +55,7 @@ export function Services() {
                 <a href="/services/project-consultancy">Leia sobre</a>
               </span>
             </div>
+            
           </div>
           <div className={styles.card}>
             <img src={imageTwo} alt="" className="h-auto w-[240px]" />

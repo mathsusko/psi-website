@@ -2,7 +2,7 @@ import styles from './WhoWeAre.module.css';
 import cardOne from '@/assets/whoweare/one.jpg';
 import cardTwo from '@/assets/whoweare/two.jpg';
 import { AccordionDemo } from '@/components/AccordionDemo';
-import ClientCarousel from '@/components/ClientCarousel';
+// import ClientCarousel from '@/components/ClientCarousel';
 import four from '@/assets/whoweare/four.jpg';
 import five from '@/assets/whoweare/five.jpg';
 import six from '@/assets/whoweare/six.jpg';
@@ -56,7 +56,7 @@ export function WhoWeAre() {
             </p>
           </div>
           <div>
-            <a href="/contact" className={styles.ctaButton}>
+            <a href="https://wa.me/5541997430276" className={styles.ctaButton} target="_blank">
               Solicitar Orçamento
             </a>
           </div>
@@ -121,7 +121,7 @@ export function WhoWeAre() {
         </div>
       </div>
 
-      <div className={styles.storyy}>
+      {/* <div className={styles.storyy}>
         <div className={styles.headd}>
           <div className={styles.hatt}>
             <span>Seu patrimônio protegido hoje e sempre</span>
@@ -137,7 +137,7 @@ export function WhoWeAre() {
           </div>
         </div>
         <ClientCarousel />
-      </div>
+      </div> */}
 
       <div className={styles.servicesInclude}>
         <div className={styles.security}>

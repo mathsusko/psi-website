@@ -58,7 +58,7 @@ export function Footer() {
               <div className={styles.contato}>
                 <div>
                   <h2>Número</h2>
-                  <p>(41) 9 9999-9999</p>
+                  <p>(41) 9 9743-0276</p>
                 </div>
                 <div>
                   <h2>E-mail</h2>

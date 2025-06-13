@@ -39,28 +39,20 @@ export default function ClientCarousel() {
     <div className="w-full py-8">
       <Swiper
         modules={[Autoplay]}
-        spaceBetween={40}
-        loop={true}
-        freeMode={true}
-        allowTouchMove={false}
+        loop
+        autoplay={{ delay: 0, disableOnInteraction: false }}
         speed={4000}
-        autoplay={{
-          delay: 0,
-          disableOnInteraction: false
-        }}
-        breakpoints={{
-          320: { slidesPerView: 2 }, // 👈 celulares
-          640: { slidesPerView: 3 }, // 👈 tablets
-          1024: { slidesPerView: 5 } // 👈 desktops
-        }}
-        className="w-full"
+        slidesPerView="auto"
+        spaceBetween={32}
+        allowTouchMove={false}
       >
         {logos.map((src, index) => (
-          <SwiperSlide key={index} className="flex items-center justify-center">
+          <SwiperSlide key={index} className="flex w-40 items-center justify-center">
             <img
               src={src}
-              alt={`Cliente ${index}`}
-              className="h-32 w-auto grayscale transition duration-300 hover:grayscale-0"
+              alt={`Logo ${index}`}
+              className="h-20 w-full object-contain filter-none"
+              draggable={false}
             />
           </SwiperSlide>
         ))}

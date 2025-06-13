@@ -1,92 +1,112 @@
+/* === FONTES === */
 @font-face {
   font-family: 'SF Pro';
   src: url('/fonts/SF-Pro.ttf') format('truetype');
   font-display: swap;
 }
 
+/* === HERO SECTION === */
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh; /* Ajuste de altura conforme necessário */
+  height: 100vh;
   background-image: url('../src/assets/whoweare/bg.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff; /* Texto claro sobre o fundo escuro */
+  color: #fff;
 }
 
 .heroOverlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Sobreposição para melhorar legibilidade */
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* camada escura para contraste */
 }
 
 .heroContent {
+  z-index: 1;
   max-width: 1140px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 32px;
-  width: 100%;
   padding: 20px;
-  z-index: 1; /* Garante que o conteúdo fique acima da sobreposição */
 }
+
 .heroContent .footer {
   display: flex;
   justify-content: center;
 }
+
 .heroContent .hat {
   display: inline-block;
   background: var(--red-900);
   padding: 4px 12px;
   border-radius: 2rem;
 }
+
 .hat p {
   font-size: 12px;
 }
 
 .hero .title {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   padding: 22px 0;
 }
+
 .hero .title h1 {
   font-family: 'SF Pro', sans-serif;
   font-stretch: expanded;
-  font-size: 3rem;
+  font-size: 22px; /* mobile */
   font-weight: bold;
-  margin-bottom: 12px;
-  line-height: 100%;
+  line-height: 1;
   text-transform: uppercase;
 }
 
 .hero .title p {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.25rem;
+  font-size: 16px;
+  text-align: center !important;
+}
+
+/* Estilo desktop */
+@media (min-width: 768px) {
+  .hero .title h1 {
+    font-size: 48px;
+  }
+
+  .hero .title p {
+    font-size: 20px;
+    text-align: left;
+  }
 }
 
 .hero .ctaButton {
-  background-color: var(--red-900); /* Cor do botão */
+  background-color: var(--red-900);
   color: white;
   padding: 12px 32px;
   border-radius: 50px;
   font-size: 1rem;
-  text-decoration: none;
   display: inline-block;
+  text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
-.hero .cta-button:hover {
-  background-color: var(--primary-color); /* Cor ao passar o mouse */
+.hero .ctaButton:hover {
+  background-color: var(--primary-color);
 }
 
+/* === STORY SECTION === */
 .story {
   max-width: 1440px;
-  margin: 120px auto;
+  margin: 64px auto;
+  padding: 0 16px;
 }
 
 .head {
@@ -94,76 +114,56 @@
   flex-direction: column;
   gap: 32px;
 }
+
 .head .hat {
-  display: inline-block;
   background: var(--red-900);
   padding: 4px 12px;
   border-radius: 2rem;
   color: white;
   font-size: 12px;
-  white-space: nowrap; /* impede quebra de linha */
-  width: fit-content; /* garante que contraia ao conteúdo */
+  width: fit-content;
+  white-space: nowrap;
 }
+
 .head .title {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 colunas por padrão */
-  gap: 16px; /* Espaço entre os itens */
-  grid-auto-flow: row; /* Garante que o fluxo de grid seja por linha */
+  grid-template-columns: 1fr;
+  gap: 16px;
 }
+
 .title h1 {
-  font-size: 40px;
+  font-size: 22px;
   font-family: 'SF Pro', sans-serif;
   font-stretch: expanded;
   font-weight: 600;
   text-transform: uppercase;
-  line-height: 100%;
+  line-height: 1;
 }
 
 .title p {
-  font-size: 24px;
+  font-size: 16px;
   text-align: justify;
 }
-@media screen and (min-width: 390px) {
-  .hat p {
-    font-size: 10px;
-  }
-  .hero .title h1 {
-    font-size: 22px !important;
-  }
-  .hero .title p {
-    font-size: 16px !important;
-    text-align: center;
-  }
-  .story {
-    margin: 64px auto;
-    padding: 0 16px;
-  }
+
+@media (min-width: 768px) {
   .head .title {
-    grid-template-columns: 1fr !important; /* Muda para 1 coluna */
-    grid-auto-flow: row; /* Os itens vão se mover para a linha seguinte */
-  }
-  .head .title h1 {
-    font-size: 22px;
-  }
-  .head .title p {
-    font-size: 16px;
-  }
-  .cards {
-    grid-template-columns: 1fr !important; /* Muda para 1 coluna */
-    grid-auto-flow: row; /* Os itens vão se mover para a linha seguinte */
-  }
-  .cards .card {
-    gap: 12px !important;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .cards .desc {
-    font-size: 16px !important;
+  .title h1 {
+    font-size: 40px;
+  }
+
+  .title p {
+    font-size: 24px;
   }
 }
+
+/* === CARDS === */
 .cards {
   margin-top: 64px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 32px;
 }
 
@@ -178,28 +178,40 @@
 }
 
 .card .desc {
+  font-size: 16px;
   padding: 4px;
-  font-size: 22px;
 }
 
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card .desc {
+    font-size: 22px;
+  }
+}
+
+/* === FAQ SECTION === */
 .faq {
   width: 100%;
-  height: 100vh; /* Ajuste de altura conforme necessário */
+  height: 100vh;
   background-image: url('../src/assets/whoweare/bgFaq.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff; /* Texto claro sobre o fundo escuro */
+  color: #fff;
+  padding: 64px 16px;
 }
 
 .faq .body {
   max-width: 1440px;
-  margin: 0 auto;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 64px;
+  grid-template-columns: 1fr;
+  gap: 22px;
 }
 
 .body .esq {
@@ -209,169 +221,102 @@
 }
 
 .esq .hatFaq {
-  display: inline-block;
   background: var(--red-900);
   padding: 4px 12px;
   border-radius: 2rem;
   color: white;
   font-size: 12px;
-  white-space: nowrap; /* impede quebra de linha */
-  width: fit-content; /* garante que contraia ao conteúdo */
+  white-space: nowrap;
+  width: fit-content;
 }
 
-.esq .faqTitle h1 {
-  font-size: 40px;
-  font-family: 'SF Pro', sans-serif;
-  font-stretch: expanded;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 390px) {
-  .faq .body {
-    grid-template-columns: 1fr !important; /* Muda para 1 coluna */
-    grid-auto-flow: row; /* Os itens vão se mover para a linha seguinte */
-    gap: 22px;
-    padding: 0 16px;
-  }
-
-  .esq .faqTitle h1 {
-    font-size: 22px;
-  }
-  .esq .faqTitle p {
-    font-size: 16px !important;
-  }
-}
 .esq .faqTitle {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.esq .faqTitle p {
-  font-size: 24px;
-}
-
-.storyy {
-  max-width: 1440px;
-  margin: 120px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
-}
-@media screen and (min-width: 390px) {
-  .storyy {
-    margin: 64px auto;
-    padding: 0 16px;
-    gap: 0;
-  }
-  .headd .titlee {
-    grid-template-columns: 1fr !important; /* Muda para 1 coluna */
-    grid-auto-flow: row; /* Os itens vão se mover para a linha seguinte */
-    gap: 22px;
-  }
-  .titlee h1 {
-    font-size: 22px !important;
-  }
-  .titlee p {
-    font-size: 16px !important;
-  }
-}
-.headd {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-.headd .hatt {
-  display: inline-block;
-  background: var(--red-900);
-  padding: 4px 12px;
-  border-radius: 2rem;
-  color: white;
-  font-size: 12px;
-  white-space: nowrap; /* impede quebra de linha */
-  width: fit-content; /* garante que contraia ao conteúdo */
-}
-.headd .titlee {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.titlee h1 {
-  font-size: 40px;
+.faqTitle h1 {
+  font-size: 22px;
   font-family: 'SF Pro', sans-serif;
   font-stretch: expanded;
   font-weight: 600;
   text-transform: uppercase;
-  line-height: 100%;
 }
 
-.titlee p {
-  font-size: 24px;
-  text-align: justify;
+.faqTitle p {
+  font-size: 16px;
 }
 
+@media (min-width: 768px) {
+  .faq .body {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
+  }
+
+  .faqTitle h1 {
+    font-size: 40px;
+  }
+
+  .faqTitle p {
+    font-size: 22px;
+  }
+}
+
+/* === SERVICE CARDS === */
 .servicesInclude {
-  margin: 120px auto;
+  width: 100%;
+  max-width: 1440px;
+  margin: 64px auto;
+  padding: 0 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
-  padding: 0 16px; /* mantém respiro lateral também aqui */
-  width: 100%;
-  box-sizing: border-box;
+  gap: 32px;
   text-align: center;
+  box-sizing: border-box;
 }
+
 .servicesInclude h1 {
   font-family: 'SF Pro', sans-serif;
   font-stretch: expanded;
-  font-size: 40px;
+  font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 100%;
+  line-height: 1;
 }
 
 .servicesInclude .security {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .serviceCards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
-  gap: 40px;
-  padding: 0 16px;
   width: 100%;
-  max-width: 1440px;
-  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
 }
-@media screen and (min-width: 390px) {
-  .servicesInclude {
-    margin: 64px auto !important;
-    gap: 32px;
+
+@media (min-width: 600px) {
+  .serviceCards {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (min-width: 1024px) {
+  .serviceCards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
   .servicesInclude h1 {
-    font-size: 22px !important;
+    font-size: 40px;
   }
 
-  .servicesInclude .security {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .serviceCards {
-    padding: 0;
-  }
-  .serviceCards {
-    gap: 22px;
-  }
-}
-
-@media (max-width: 900px) {
-  .serviceCards {
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
-  }
-}
-
-@media (max-width: 600px) {
-  .serviceCards {
-    grid-template-columns: 1fr; /* 1 coluna em celulares */
+  .servicesInclude {
+    gap: 64px;
+    margin: 120px auto;
   }
 }

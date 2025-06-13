@@ -10,7 +10,7 @@
   flex-direction: column;
   align-items: center;
   gap: 64px;
-  padding: 0 16px; /* mantém respiro lateral também aqui */
+  padding: 0; /* mantém respiro lateral também aqui */
   width: 100%;
   box-sizing: border-box;
 }
@@ -25,7 +25,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
   gap: 40px;
-  padding: 0 16px;
+  padding: 0;
   width: 100%;
   max-width: 1440px;
   box-sizing: border-box;
@@ -40,5 +40,6 @@
 @media (max-width: 600px) {
   .serviceCards {
     grid-template-columns: 1fr; /* 1 coluna em celulares */
+    padding: 0;
   }
 }

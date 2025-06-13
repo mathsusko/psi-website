@@ -15,7 +15,7 @@ export default function BannerHero({
   hat = '',
   backgroundImage,
   ctaLabel = 'Solicitar Orçamento',
-  ctaLink = '/contact'
+  ctaLink = 'https://wa.me/5541997430276'
 }: BannerHeroProps) {
   return (
     <div

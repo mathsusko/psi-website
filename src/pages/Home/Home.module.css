@@ -128,17 +128,24 @@
   .grid {
     grid-template-columns: 1fr; /* Para telas pequenas, 1 coluna */
   }
+
+  .verMais {
+    display: none;
+  }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .grid {
     grid-template-columns: 1fr 1fr; /* Para telas médias, 2 colunas */
   }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .grid {
     grid-template-columns: 1fr 1fr 1fr; /* Para telas grandes, 3 colunas */
+  }
+  .clients .clientOverlay {
+    border-radius: 0 !important;
   }
 }
 
@@ -226,9 +233,10 @@
   }
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (max-width: 390px) {
   .clients {
-    border-radius: 0;
+    border-radius: 0 !important;
+    margin: 0;
   }
   .clientBody {
     padding: 32px 16px;
@@ -265,7 +273,7 @@
 }
 
 .bodyDif {
-  max-width: 1440px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -273,10 +281,11 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  max-width: 750px;
+  max-width: 1240px;
   margin-bottom: 100px;
+  justify-content: space-between;
 }
-@media screen and (min-width: 390px) {
+@media screen and (max-width: 390px) {
   .dif {
     margin-top: 0;
   }
@@ -290,7 +299,6 @@
     line-height: 100%;
   }
   .hatDif {
-    margin-bottom: 22px;
   }
   .difBody {
     margin-bottom: 32px;
@@ -315,6 +323,8 @@
   flex-direction: column;
   gap: 12px;
   color: var(--white);
+  font-size: 40px !important;
+  max-width: 500px;
 }
 
 .titleDif > p {

@@ -40,8 +40,9 @@ export function Home() {
 
           <div>
             <a
-              href="/contact"
+              href="https://wa.me/5541997430276"
               className={`${styles.ctaButton} px-8 py-4 text-sm sm:text-base md:text-lg`}
+              target="_blank"
             >
               Solicitar Orçamento
             </a>
@@ -69,7 +70,7 @@ export function Home() {
             </div>
 
             <div className="flex flex-col justify-end">
-              <p>
+              <p className={styles.verMais}>
                 <a href="#" className="text-red-600 hover:underline">
                   Ver mais
                 </a>
@@ -84,7 +85,7 @@ export function Home() {
             description="Projetamos e implementamos redes de hidrantes, sprinklers, bombas de incêndio e sistemas de pressurização."
             imageSrc={imageThree} // Usando a imagem importada corretamente
             ctaText="Agendar Orçamento"
-            ctaLink="#"
+            ctaLink="https://wa.me/5541997430276"
             icon={<Flame className="text-2xl text-white" />}
           />
           <ServiceCard
@@ -92,7 +93,7 @@ export function Home() {
             description="Realizamos inspeções preventivas e corretivas, garantindo que cada equipamento funcione com precisão milimétrica."
             imageSrc={imageTwo} // Usando a imagem importada corretamente
             ctaText="Agendar Orçamento"
-            ctaLink="#"
+            ctaLink="https://wa.me/5541997430276"
             icon={<Wrench className="text-2xl text-white" />}
           />
           <ServiceCard
@@ -100,7 +101,7 @@ export function Home() {
             description="Desenvolvemos soluções sob medida para edificações de grande porte, assegurando conformidade com as regulamentações vigentes."
             imageSrc={imageOne} // Usando a imagem importada corretamente
             ctaText="Agendar Orçamento"
-            ctaLink="#"
+            ctaLink="https://wa.me/5541997430276"
             icon={<HardHat className="text-2xl text-white" />}
           />
         </div>
@@ -118,7 +119,7 @@ export function Home() {
               </p>
             </div>
             <div className={styles.titleTitle}>
-              <h1 className={styles.clientTitle}>Empresas que Confian na PSI Previncêndio</h1>
+              <h1 className={styles.clientTitle}>Empresas que Confiam na PSI Previncêndio</h1>
               <p>
                 Nosso portfólio de serviços é projetado para atender as mais rigorosas normas
                 técnicas e garantir a máxima eficiência na prevenção de incêndios.
@@ -126,7 +127,7 @@ export function Home() {
             </div>
           </div>
 
-          <ClientCarousel />
+          {/* <ClientCarousel /> */}
         </div>
       </div>
 
@@ -138,14 +139,13 @@ export function Home() {
                 <span className="text-xl">Nossos diferenciais</span>
                 <Separator orientation="vertical" className="h-10 bg-gray-300" />
                 <p className="px-1 text-xs">
-                  Não basta estar dentro das normas. <br /> É preciso estar à frente delas.
+                  Não basta estar dentro das normas.
+                  <br /> É preciso estar à frente delas.
                 </p>
               </div>
 
               <div className={styles.titleDif}>
-                <h1 className="text-xl font-semibold sm:text-2xl md:text-3xl">
-                  Compromisso com a Segurança. Excelência em Cada Detalhe.
-                </h1>
+                <h1 className="">Compromisso com a Segurança. Excelência em Cada Detalhe.</h1>
                 <p className="text-xs sm:text-sm md:text-base">
                   Nosso portfólio de serviços é projetado para atender as mais rigorosas normas
                   técnicas e garantir a máxima eficiência na prevenção de incêndios.
@@ -154,7 +154,7 @@ export function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center gap-8 text-white sm:gap-6">
+          <div className="flex flex-col items-center gap-[64px] text-white sm:gap-6">
             {/* Card 1 */}
             <div className="flex flex-col gap-8 lg:flex-row">
               <img
@@ -252,7 +252,7 @@ export function Home() {
               </div>
 
               <button className={styles.buttonCta}>
-                <a href="#" className="text-xl sm:text-2xl">
+                <a href="https://wa.me/5541997430276" className="text-xl sm:text-2xl">
                   <MessageCircle /> Agendar Orçamento
                 </a>
               </button>

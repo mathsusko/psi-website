@@ -10,7 +10,7 @@
   flex-direction: column;
   align-items: center;
   gap: 64px;
-  padding: 0 16px; /* mantém respiro lateral também aqui */
+  padding: 0; /* mantém respiro lateral também aqui */
   width: 100%;
   box-sizing: border-box;
 }

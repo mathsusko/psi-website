@@ -105,7 +105,8 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  width: 700px;
+  max-width: 700px !important;
+  margin-bottom: 32px;
 }
 .serviceTitle h1 {
   font-size: 40px;
@@ -124,7 +125,7 @@
 .serviceCards {
   display: flex;
   flex-wrap: wrap; /* Permite quebra em telas pequenas */
-  justify-content: center;
+  justify-content: space-around;
   gap: 32px;
   padding: 16px;
 }

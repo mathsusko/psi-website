@@ -1,64 +1,87 @@
+/* === FONTE CUSTOMIZADA === */
 @font-face {
   font-family: 'SF Pro';
   src: url('/fonts/SF-Pro.ttf') format('truetype');
   font-display: swap;
 }
 
+/* === FUNDO GRADIENTE DA SEÇÃO === */
 .bg {
-  background-color: linear-gradient(180deg, #7c0e0e 0%, #1a1a1a 100%);
+  /* Corrigido o uso da propriedade de gradiente */
+  background: linear-gradient(180deg, #7c0e0e 0%, #1a1a1a 100%);
   min-height: 100vh;
 }
 
+/* === CONTAINER GRID === */
 .container {
-  max-width: 1440px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 0 auto;
-  padding: 200px 0;
+  grid-template-columns: 1fr; /* mobile: 1 coluna */
   gap: 64px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 120px 16px 32px 16px;
+  box-sizing: border-box;
 }
 
-@media screen and (min-width: 390px) {
+/* Desktop / telas maiores */
+@media (min-width: 768px) {
   .container {
-    padding: 120px 16px;
-    grid-template-columns: 1fr !important; /* Muda para 1 coluna */
-    grid-auto-flow: row; /* Os itens vão se mover para a linha seguinte */
-  }
-  .dir .title {
-    font-size: 32px !important;
-  }
-  .container .dir {
-    gap: 16px !important;
-  }
-  .dir .hat {
-    border: 1px solid black;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas a partir de 768px */
+    gap: 64px;
+    padding: 200px 0;
   }
 }
 
+/* === COLUNA DIREITA === */
 .container .dir {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 16px; /* mobile */
+  padding: 0 32px;
 }
+
+/* Desktop: espaçamento maior */
+@media (min-width: 768px) {
+  .container .dir {
+    gap: 32px;
+  }
+}
+
+/* === TAG TIPO "CHIP" === */
 .dir .hat {
-  display: inline-block;
   background: var(--white);
   padding: 4px 12px;
   border-radius: 2rem;
   font-size: 12px;
   color: gray;
-  white-space: nowrap; /* impede quebra de linha */
-  width: fit-content; /* garante que contraia ao conteúdo */
-}
-.dir .title {
-  font-size: 40px;
-  font-family: 'SF Pro', sans-serif;
-  font-stretch: expanded;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 100%;
+  white-space: nowrap;
+  width: fit-content;
+  border: 1px solid black; /* estilo para mobile */
 }
 
+/* === TÍTULO === */
+.dir .title {
+  font-family: 'SF Pro', sans-serif;
+  font-size: 32px; /* mobile */
+  font-stretch: expanded;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.dir .description {
+  color: white;
+}
+
+/* Desktop: aumenta fonte */
+@media (min-width: 768px) {
+  .dir .title {
+    font-size: 40px;
+  }
+}
+
+/* === COLUNA ESQUERDA === */
 .container .esq {
   display: flex;
   justify-content: center;
