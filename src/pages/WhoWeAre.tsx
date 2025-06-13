@@ -1,16 +1,19 @@
 import styles from './WhoWeAre.module.css';
+
 import cardOne from '@/assets/whoweare/one.jpg';
 import cardTwo from '@/assets/whoweare/two.jpg';
-import { AccordionDemo } from '@/components/AccordionDemo';
-// import ClientCarousel from '@/components/ClientCarousel';
 import four from '@/assets/whoweare/four.jpg';
 import five from '@/assets/whoweare/five.jpg';
 import six from '@/assets/whoweare/six.jpg';
+import heroBg from '@/assets/whoweare/back.jpg';
+import faqBg from '@/assets/whoweare/bgFaq.jpg';
 
-import { Flame, Shield } from 'lucide-react';
+import { AccordionDemo } from '@/components/AccordionDemo';
 import Cards from '@/components/Cards';
 import SectionCta from '@/components/SectionCta';
 import { Footer } from '@/components/Footer';
+
+import { Flame, Shield } from 'lucide-react';
 
 export function WhoWeAre() {
   const cards = [
@@ -18,29 +21,30 @@ export function WhoWeAre() {
       image: six,
       icon: Flame,
       title: 'Suporte técnico especializado 24/7'
-      // description:
-      //   'Realizamos testes de pressurização e estanqueidade para garantir a eficiência e segurança dos sistemas de combate a incêndios.'
     },
     {
       image: five,
       icon: Shield,
       title: 'Planos de manutenção preventiva e corretiva'
-      // description:
-      //   'Oferecemos serviços de inspeção e manutenção de bombas e reservatórios, assegurando o funcionamento contínuo e seguro dos sistemas de combate a incêndios.'
     },
     {
       image: four,
       icon: Shield,
       title: 'Consultoria para certificação e adequação às normas'
-      // description:
-      //   'Realizamos limpeza e substituição de componentes, garantindo o bom funcionamento e a longevidade dos sistemas de prevenção contra incêndios.'
     }
   ];
 
   return (
     <>
       {/* banner hero */}
-      <div className={styles.hero}>
+      <div
+        className={styles.hero}
+        style={{
+          backgroundImage: `url(${heroBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
           <span className={styles.hat}>
@@ -56,13 +60,19 @@ export function WhoWeAre() {
             </p>
           </div>
           <div>
-            <a href="https://wa.me/5541997430276" className={styles.ctaButton} target="_blank">
+            <a
+              href="https://wa.me/5541997430276"
+              className={styles.ctaButton}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Solicitar Orçamento
             </a>
           </div>
         </div>
       </div>
 
+      {/* seção história */}
       <div className={styles.story}>
         <div className={styles.head}>
           <div className={styles.hat}>
@@ -70,7 +80,6 @@ export function WhoWeAre() {
           </div>
           <div className={styles.title}>
             <h1>Nossa Jornada Rumo à Excelência</h1>
-
             <p>
               Fundada há 14 anos, a PSI Previncêndio nasceu com o propósito de oferecer soluções
               seguras e eficientes no combate a incêndios. Desde então, crescemos, expandimos nossa
@@ -100,7 +109,15 @@ export function WhoWeAre() {
         </div>
       </div>
 
-      <div className={styles.faq}>
+      {/* seção FAQ */}
+      <div
+        className={styles.faq}
+        style={{
+          backgroundImage: `url(${faqBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
         <div className={styles.body}>
           <div className={styles.esq}>
             <div className={styles.hatFaq}>
@@ -121,24 +138,7 @@ export function WhoWeAre() {
         </div>
       </div>
 
-      {/* <div className={styles.storyy}>
-        <div className={styles.headd}>
-          <div className={styles.hatt}>
-            <span>Seu patrimônio protegido hoje e sempre</span>
-          </div>
-          <div className={styles.titlee}>
-            <h1>Grandes Projetos, Grandes Parcerias</h1>
-
-            <p>
-              A confiança de grandes empresas reforça nosso compromisso com a excelência. Atendemos
-              clientes dos mais diversos setores, sempre entregando soluções personalizadas e
-              eficientes.
-            </p>
-          </div>
-        </div>
-        <ClientCarousel />
-      </div> */}
-
+      {/* serviços */}
       <div className={styles.servicesInclude}>
         <div className={styles.security}>
           <h1>
@@ -152,13 +152,7 @@ export function WhoWeAre() {
         </div>
         <div className={styles.serviceCards}>
           {cards.map((card, index) => (
-            <Cards
-              key={index}
-              image={card.image}
-              icon={card.icon}
-              title={card.title}
-              // description={card.description}
-            />
+            <Cards key={index} image={card.image} icon={card.icon} title={card.title} />
           ))}
         </div>
         <div>

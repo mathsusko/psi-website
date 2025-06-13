@@ -10,9 +10,6 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url('../src/assets/whoweare/back.jpg');
-  background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +19,7 @@
 .heroOverlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* camada escura para contraste */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .heroContent {
@@ -63,7 +60,7 @@
 .hero .title h1 {
   font-family: 'SF Pro', sans-serif;
   font-stretch: expanded;
-  font-size: 22px; /* mobile */
+  font-size: 22px;
   font-weight: bold;
   line-height: 1;
   text-transform: uppercase;
@@ -75,7 +72,6 @@
   text-align: center !important;
 }
 
-/* Estilo desktop */
 @media (min-width: 768px) {
   .hero .title h1 {
     font-size: 48px;
@@ -195,9 +191,6 @@
 .faq {
   width: 100%;
   height: 100vh;
-  background-image: url('../src/assets/whoweare/bgFaq.jpg');
-  background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
