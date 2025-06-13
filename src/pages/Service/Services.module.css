@@ -53,17 +53,20 @@
 .hero .title {
   padding: 22px 0;
   text-align: center;
-  max-width: 936.36px;
+  max-width: 1200px;
 }
 .heroContent .title {
   text-transform: uppercase;
+}
+.heroContent .title h1 {
+  font-size: 3rem !important;
 }
 .hero .title h1 {
   font-family: 'SF Pro', sans-serif;
   font-stretch: expanded;
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 1.5rem;
   line-height: 100%;
 }
 @media screen and (min-width: 390px) {

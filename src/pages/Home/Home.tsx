@@ -12,6 +12,7 @@ import imageTwoDif from '../../assets/home/dif/imageTwoDif.jpg';
 import imageThreeDif from '../../assets/home/dif/imageThreeDif.jpg';
 import imageFourDif from '../../assets/home/dif/imageFourDif.jpg';
 import ClientCarousel from '../../components/ClientCarousel';
+import videoBg from '../../assets/home/bg.mp4';
 
 import { Footer } from '@/components/Footer';
 
@@ -19,36 +20,35 @@ export function Home() {
   return (
     <>
       {/* banner hero */}
-      <div className={`${styles.hero} relative`}>
-        <div className={styles.heroOverlay}></div>
-        <div
-          className={`${styles.heroContent} relative px-4 py-16 text-white sm:px-8 md:px-16 lg:px-32`}
-        >
-          <span className={`${styles.hat} text-xs sm:text-sm md:text-base lg:text-lg`}>
+
+      <section className={styles.hero}>
+        <video className={styles.videoBg} src={videoBg} autoPlay loop muted playsInline />
+
+        <div className={styles.heroContent}>
+          <span className={styles.hat}>
             <p>Confie na experiência</p>
           </span>
 
           <div className={styles.title}>
-            <h1 className="text-3xl font-semibold sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1>
               SEGURANÇA QUE PROTEGE <br /> VIDAS E PATRIMÔNIOS
             </h1>
-            <p className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl">
-              Soluções completas em prevenção e combate a incêndios <br /> para empresas, indústrias
-              e edificações comerciais.
+            <p>
+              Soluções completas em prevenção e combate a incêndios <br />
+              para empresas, indústrias e edificações comerciais.
             </p>
           </div>
 
-          <div>
-            <a
-              href="https://wa.me/5541997430276"
-              className={`${styles.ctaButton} px-8 py-4 text-sm sm:text-base md:text-lg`}
-              target="_blank"
-            >
-              Solicitar Orçamento
-            </a>
-          </div>
+          <a
+            href="https://wa.me/5541997430276"
+            className={styles.ctaButton}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Solicitar Orçamento
+          </a>
         </div>
-      </div>
+      </section>
 
       {/* serviços */}
       <div className={styles.services}>
@@ -71,7 +71,7 @@ export function Home() {
 
             <div className="flex flex-col justify-end">
               <p className={styles.verMais}>
-                <a href="#" className="text-red-600 hover:underline">
+                <a href="/services" className="text-red-600 hover:underline">
                   Ver mais
                 </a>
               </p>
@@ -127,7 +127,7 @@ export function Home() {
             </div>
           </div>
 
-          {/* <ClientCarousel /> */}
+          <ClientCarousel />
         </div>
       </div>
 

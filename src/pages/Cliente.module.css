@@ -77,7 +77,9 @@
 /* Desktop: aumenta fonte */
 @media (min-width: 768px) {
   .dir .title {
-    font-size: 40px;
+    font-size: 3rem;
+    font-weight: 700;
+    width: 600px;
   }
 }
 

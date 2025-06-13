@@ -16,7 +16,10 @@ export function Services() {
             <p>Da consultoria à certificação. Segurança sem falhas</p>
           </span>
           <div className={styles.title}>
-            <h1>Soluções Completa para Prevenção e Combate a Incêndios</h1>
+            <h1>
+              Soluções Completa para <br />
+              Prevenção e Combate a Incêndios
+            </h1>
             <p>
               Projetamos, instalamos e mantemos sistemas de segurança contra incêndios com máxima
               eficiência e conformidade. Nossa expertise garante proteção total para empresas,
@@ -55,7 +58,6 @@ export function Services() {
                 <a href="/services/project-consultancy">Leia sobre</a>
               </span>
             </div>
-            
           </div>
           <div className={styles.card}>
             <img src={imageTwo} alt="" className="h-auto w-[240px]" />
