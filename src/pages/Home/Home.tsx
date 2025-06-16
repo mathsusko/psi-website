@@ -38,15 +38,16 @@ export function Home() {
               para empresas, indústrias e edificações comerciais.
             </p>
           </div>
-
-          <a
-            href="https://wa.me/5541997430276"
-            className={styles.ctaButton}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Solicitar Orçamento
-          </a>
+          <div className="transition-all duration-300 ease-in-out hover:opacity-80">
+            <a
+              href="https://wa.me/5541997430276"
+              className={styles.ctaButton}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Solicitar Orçamento
+            </a>
+          </div>
         </div>
       </section>
 

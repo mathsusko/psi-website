@@ -49,7 +49,7 @@ export function Services() {
         </div>
 
         <div className={styles.serviceCards}>
-          <div className={styles.card}>
+          <div className={`${styles.card} transition-all duration-300 ease-in-out hover:scale-110`}>
             <img src={imageOne} alt="" className="h-auto w-[240px] object-cover" />
 
             <div className={styles.info}>
@@ -59,7 +59,7 @@ export function Services() {
               </span>
             </div>
           </div>
-          <div className={styles.card}>
+          <div className={`${styles.card} transition-all duration-300 ease-in-out hover:scale-110`}>
             <img src={imageTwo} alt="" className="h-auto w-[240px]" />
 
             <div className={styles.info}>
@@ -69,7 +69,7 @@ export function Services() {
               </span>
             </div>
           </div>
-          <div className={styles.card}>
+          <div className={`${styles.card} transition-all duration-300 ease-in-out hover:scale-110`}>
             <img src={imageThree} alt="" className="h-auto w-[240px]" />
 
             <div className={styles.info}>
@@ -79,7 +79,7 @@ export function Services() {
               </span>
             </div>
           </div>
-          <div className={styles.card}>
+          <div className={`${styles.card} transition-all duration-300 ease-in-out hover:scale-110`}>
             <img src={imageFour} alt="" className="h-auto w-[240px]" />
 
             <div className={styles.info}>

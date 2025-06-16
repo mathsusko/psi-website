@@ -21,7 +21,7 @@ const ServiceCard: FC<ServiceCardProps> = ({
   icon
 }) => {
   return (
-    <div className="flex flex-col gap-2 overflow-hidden rounded-lg bg-white p-4 shadow-lg">
+    <div className="flex flex-col gap-2 overflow-hidden rounded-lg bg-white p-4 shadow-lg transition-all duration-300 ease-in-out hover:scale-110 hover:opacity-80">
       <img src={imageSrc} alt={title} className="h-48 w-full rounded-lg object-cover" />
       <div className="flex flex-col gap-2 p-4">
         <div className="flex items-center">

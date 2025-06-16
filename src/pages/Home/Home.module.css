@@ -81,10 +81,6 @@
   transition: background-color 0.3s ease;
 }
 
-.ctaButton:hover {
-  background-color: var(--primary-color);
-}
-
 /* .hero {
   position: relative;
   width: 100%;

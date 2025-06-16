@@ -62,7 +62,7 @@ export function Clients() {
             {logos.map((logo, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center rounded-lg bg-white p-4 shadow-md"
+                className="flex items-center justify-center rounded-lg bg-white p-4 shadow-md transition-all duration-300 ease-in-out hover:scale-110"
               >
                 <img src={logo} alt={`Logo ${index + 1}`} className="max-h-16 object-contain" />
               </div>
