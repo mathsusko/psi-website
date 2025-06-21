@@ -18,41 +18,35 @@ export function Footer() {
               <p>Páginas</p>
               <ul>
                 <li>
-                  <a href="#">Home</a>
+                  <a href="/">Página Inicial</a>
                 </li>
                 <li>
-                  <a href="#">Contatos</a>
+                  <a href="/contact">Contatos</a>
                 </li>
                 <li>
-                  <a href="#">Quem somos</a>
+                  <a href="/who-we-are">Quem somos</a>
                 </li>
                 <li>
-                  <a href="#">Clientes</a>
+                  <a href="/clients">Clientes</a>
                 </li>
                 <li>
-                  <a href="#">Contato</a>
+                  <a href="/contact">Contato</a>
                 </li>
               </ul>
             </div>
+
             <div className={styles.link}>
               <p>Social</p>
               <ul>
                 <li>
                   <a href="#">Instagram</a>
                 </li>
-              </ul>
-            </div>
-            <div className={styles.link}>
-              <p>Transparência</p>
-              <ul>
                 <li>
-                  <a href="#">Política e Privacidade</a>
-                </li>
-                <li>
-                  <a href="#">Termos e serviços</a>
+                  <a href="#">Facebook</a>
                 </li>
               </ul>
             </div>
+
             <div className={styles.link}>
               <p>Contato</p>
               <div className={styles.contato}>

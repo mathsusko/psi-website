@@ -1,9 +1,8 @@
 footer {
   background-image: url('../assets/home/footer.jpg');
   background-repeat: no-repeat;
-  background-size: cover;       /* 👈 cobre toda a área */
-  background-position: center;  /* 👈 centraliza */
-   
+  background-size: cover; /* 👈 cobre toda a área */
+  background-position: center; /* 👈 centraliza */
 }
 
 .footer {
@@ -23,6 +22,7 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  gap: 64px;
 }
 
 .body .logo {
@@ -46,16 +46,16 @@ footer {
   gap: 22px;
 }
 
-.links .link p{
+.links .link p {
   font-size: 16px;
-  font-weight: 600; 
+  font-weight: 600;
 }
 .links .link ul {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.links .link ul > li > a{
+.links .link ul > li > a {
   font-size: 14px;
 }
 
@@ -67,10 +67,14 @@ footer {
 
 .empresa p {
   opacity: 40%;
-
 }
 
-
+.link .contato {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 32px !important;
+}
 
 /* ✅ Responsividade para telas menores */
 @media (max-width: 768px) {

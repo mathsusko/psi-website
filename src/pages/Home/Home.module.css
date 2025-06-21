@@ -64,6 +64,11 @@
   line-height: 1.1;
   margin-bottom: 1.5rem;
 }
+@media screen and (max-width: 400px) {
+  .title h1 {
+    font-size: 2rem;
+  }
+}
 
 .title p {
   font-family: 'Poppins', sans-serif;
@@ -80,80 +85,6 @@
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
-
-/* .hero {
-  position: relative;
-  width: 100%;
-  height: 100vh; 
-  background-image: url('../../assets/home/bgHome.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff; 
-} */
-/* 
-.heroOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-}
-
-.heroContent {
-  max-width: 1440px;
-  display: block;
-  width: 100%;
-  padding: 20px;
-  z-index: 1; 
-}
-.heroContent .footer {
-  display: flex;
-  justify-content: center;
-}
-.heroContent .hat {
-  display: inline-block;
-  background: var(--red-900);
-  padding: 4px 12px;
-  border-radius: 2rem;
-}
-.hat p {
-  font-size: 12px;
-}
-.hero .title {
-  padding: 22px 0;
-  margin-bottom: 32px;
-}
-.hero .title h1 {
-  font-family: 'SF Pro', sans-serif;
-  font-stretch: expanded;
-  font-weight: bold;
-  margin-bottom: 22px;
-  line-height: 100%;
-}
-
-.hero .title p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.25rem;
-}
-
-.hero .ctaButton {
-  background-color: var(--red-900); 
-  color: white;
-  padding: 12px 32px;
-  border-radius: 50px;
-  font-size: 1rem;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-
-.hero .cta-button:hover {
-  background-color: var(--primary-color); 
-} */
 
 /* CSS para a Section Serviços */
 .services {
@@ -401,6 +332,10 @@
   gap: 12px;
   color: var(--white);
   font-size: 40px !important;
+  font-weight: 600;
+  font-family: 'SF Pro', sans-serif;
+  font-stretch: expanded;
+  line-height: 1;
   max-width: 500px;
 }
 
