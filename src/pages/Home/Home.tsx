@@ -40,7 +40,7 @@ export function Home() {
           </div>
           <div className="transition-all duration-300 ease-in-out hover:opacity-80">
             <a
-              href="https://wa.me/5541997430276"
+              href="https://wa.me/5541997430178"
               className={styles.ctaButton}
               target="_blank"
               rel="noopener noreferrer"
@@ -253,7 +253,7 @@ export function Home() {
               </div>
 
               <button className={styles.buttonCta}>
-                <a href="https://wa.me/5541997430276" className="text-xl sm:text-2xl">
+                <a href="https://wa.me/5541997430178" className="text-xl sm:text-2xl">
                   <MessageCircle /> Agendar Orçamento
                 </a>
               </button>
