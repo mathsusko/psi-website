@@ -10,6 +10,7 @@ import three from '@/assets/service/instalacao/thre.jpg';
 import four from '@/assets/service/instalacao/four.jpg';
 import five from '@/assets/service/instalacao/five.jpg';
 import six from '@/assets/service/instalacao/six.jpg';
+import seven from '@/assets/service/instalacao/seven.png';
 import { LampWallUp, Flame, Shield } from 'lucide-react';
 
 export function SystemInstallation() {
@@ -54,6 +55,13 @@ export function SystemInstallation() {
       title: 'Sistema de espuma para combate a incêndios químicos',
       description:
         'Instalamos sistemas de espuma para combate a incêndios químicos, garantindo maior eficácia na contenção de riscos.'
+    },
+    {
+      image: seven,
+      icon: Shield,
+      title: 'SPDA – Sistema de Proteção contra Descargas Atmosféricas',
+      description:
+        'Projetamos e instalamos para-raios (SPDA) conforme normas técnicas, oferecendo proteção completa para edificações e pessoas contra descargas elétricas, reduzindo riscos e garantindo segurança total.'
     }
   ];
 
