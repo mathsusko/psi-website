@@ -35,7 +35,7 @@ export function Home() {
             </h1>
             <p>
               Soluções completas em prevenção e combate a incêndios <br />
-              para empresas, indústrias e edificações comerciais.
+              para empresas, indústrias, edificações comerciais e prediais.
             </p>
           </div>
           <div className="transition-all duration-300 ease-in-out hover:opacity-80">
