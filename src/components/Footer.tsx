@@ -20,9 +20,9 @@ export function Footer() {
                 <li>
                   <a href="/">Página Inicial</a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="/contact">Contatos</a>
-                </li>
+                </li> */}
                 <li>
                   <a href="/who-we-are">Quem somos</a>
                 </li>
@@ -30,8 +30,11 @@ export function Footer() {
                   <a href="/clients">Clientes</a>
                 </li>
                 <li>
-                  <a href="/contact">Contato</a>
+                  <a href="/services">Serviços</a>
                 </li>
+                {/* <li>
+                  <a href="/contact">Contato</a>
+                </li> */}
               </ul>
             </div>
 
@@ -39,11 +42,11 @@ export function Footer() {
               <p>Social</p>
               <ul>
                 <li>
-                  <a href="#">Instagram</a>
+                  <a href="https://www.instagram.com/previncendiopsi/">Instagram</a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#">Facebook</a>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -51,7 +54,7 @@ export function Footer() {
               <p>Contato</p>
               <div className={styles.contato}>
                 <div>
-                  <span>Celson</span>
+                  <span>Celso</span>
                   <p>+55 (41) 99743-0178</p>
                   <br />
                   <span>Gustavo</span>

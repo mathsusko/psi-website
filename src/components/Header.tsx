@@ -36,9 +36,9 @@ export function Header() {
           <Link to="/clients" className="text-gray-700 hover:text-red-600">
             Clientes
           </Link>
-          <Link to="/contact" className="text-gray-700 hover:text-red-600">
+          {/* <Link to="/contact" className="text-gray-700 hover:text-red-600">
             Contato
-          </Link>
+          </Link> */}
         </nav>
 
         {/* Botão no desktop e mobile */}
@@ -73,9 +73,9 @@ export function Header() {
             <Link to="/clients" className="text-gray-700 hover:text-red-600">
               Clientes
             </Link>
-            <Link to="/contact" className="text-gray-700 hover:text-red-600">
+            {/* <Link to="/contact" className="text-gray-700 hover:text-red-600">
               Contato
-            </Link>
+            </Link> */}
             <div className="mt-4">
               <a
                 href="https://wa.me/5541997430178"
