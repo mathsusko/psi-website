@@ -11,7 +11,7 @@ import four from '@/assets/service/instalacao/four.jpg';
 import five from '@/assets/service/instalacao/five.jpg';
 import six from '@/assets/service/instalacao/six.jpg';
 import seven from '@/assets/service/instalacao/seven.png';
-import { LampWallUp, Flame, Shield } from 'lucide-react';
+import { LampWallUp, Droplets, Bell, Gauge, Wind, FlaskConical, Zap } from 'lucide-react';
 
 export function SystemInstallation() {
   const cards = [
@@ -24,41 +24,41 @@ export function SystemInstallation() {
     },
     {
       image: four,
-      icon: Flame,
+      icon: Droplets,
       title: 'Sistema de sprinklers automáticos',
       description:
         'Projetamos e instalamos sistemas de sprinklers automáticos para uma resposta rápida e eficiente contra incêndios.'
     },
     {
       image: three,
-      icon: Shield,
+      icon: Bell,
       title: 'Sistema de detecção e alarme de incêndio',
       description:
         'Implementamos sistemas de detecção e alarme de incêndio para identificação rápida e evacuação segura.'
     },
     {
       image: six,
-      icon: Shield,
+      icon: Gauge,
       title: 'Bombas de incêndio e casa de bombas',
       description:
         'Fornecemos e instalamos bombas de incêndio e casas de bombas para garantir pressão e fluxo adequados no combate a incêndios.'
     },
     {
       image: five,
-      icon: Shield,
+      icon: Wind,
       title: 'Rede de tubulação para gases extintores',
       description: '(CO₂, FM-200, etc.)'
     },
     {
       image: two,
-      icon: Shield,
+      icon: FlaskConical,
       title: 'Sistema de espuma para combate a incêndios químicos',
       description:
         'Instalamos sistemas de espuma para combate a incêndios químicos, garantindo maior eficácia na contenção de riscos.'
     },
     {
       image: seven,
-      icon: Shield,
+      icon: Zap,
       title: 'SPDA – Sistema de Proteção contra Descargas Atmosféricas',
       description:
         'Projetamos e instalamos para-raios (SPDA) conforme normas técnicas, oferecendo proteção completa para edificações e pessoas contra descargas elétricas, reduzindo riscos e garantindo segurança total.'

@@ -5,7 +5,7 @@ import three from '@/assets/service/certificacao/imageThree.jpg';
 import four from '@/assets/service/certificacao/imageOne.jpg';
 import bg from '@/assets/service/certificacao/image.jpg';
 import styles from './Certification.module.css';
-import { Flame, Shield } from 'lucide-react';
+import { ClipboardCheck, ShieldCheck, FileText } from 'lucide-react';
 import BannerHero from '@/components/BannerHero';
 import Cards from '@/components/Cards';
 
@@ -13,21 +13,21 @@ export function Certification() {
   const cards = [
     {
       image: four,
-      icon: Flame,
+      icon: ClipboardCheck,
       title: 'Obtenção e renovação de AVCB',
       description:
         'Cuidamos de todo o processo para obtenção e renovação do AVCB, garantindo que sua edificação atenda às exigências do Corpo de Bombeiros com segurança e agilidade.'
     },
     {
       image: three,
-      icon: Shield,
+      icon: ShieldCheck,
       title: 'Adequação às normas de segurança contra incêndios',
       description:
         'Garantimos que sua empresa esteja em total conformidade com as normas de segurança contra incêndios, oferecendo soluções técnicas sob medida e dentro das exigências legais.'
     },
     {
       image: two,
-      icon: Shield,
+      icon: FileText,
       title: 'Laudos técnicos e emissão de ART',
       description:
         'Emitimos laudos técnicos e ART com respaldo profissional, assegurando a validade legal e a conformidade dos sistemas de prevenção e combate a incêndios.'

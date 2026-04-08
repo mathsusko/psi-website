@@ -5,7 +5,7 @@ import two from '@/assets/service/consulty/two.jpg';
 import three from '@/assets/service/consulty/three.jpg';
 import bg from '@/assets/service/consulty/bg.jpg';
 import styles from './Certification.module.css';
-import { Flame, Shield } from 'lucide-react';
+import { Flame, ShieldCheck, FileText } from 'lucide-react';
 import BannerHero from '@/components/BannerHero';
 import Cards from '@/components/Cards';
 
@@ -20,14 +20,14 @@ export function ProjectConsultancy() {
     },
     {
       image: two,
-      icon: Shield,
+      icon: ShieldCheck,
       title: 'Adequação às normas de segurança contra incêndios',
       description:
         'Garantimos que sua empresa esteja em total conformidade com as normas de segurança contra incêndios, oferecendo soluções técnicas sob medida e dentro das exigências legais.'
     },
     {
       image: one,
-      icon: Shield,
+      icon: FileText,
       title: 'Laudos técnicos e emissão de ART',
       description:
         'Emitimos laudos técnicos e ART com respaldo profissional, assegurando a validade legal e a conformidade dos sistemas de prevenção e combate a incêndios.'

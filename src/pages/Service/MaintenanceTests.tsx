@@ -5,7 +5,7 @@ import two from '@/assets/service/maintenance/three.jpg';
 import one from '@/assets/service/maintenance/one.jpg';
 import bg from '@/assets/service/maintenance/bg.jpg';
 import styles from './Certification.module.css';
-import { Flame, Shield } from 'lucide-react';
+import { Gauge, Wrench, RefreshCw } from 'lucide-react';
 import BannerHero from '@/components/BannerHero';
 import Cards from '@/components/Cards';
 
@@ -13,21 +13,21 @@ export function MaintenanceTests() {
   const cards = [
     {
       image: three,
-      icon: Flame,
+      icon: Gauge,
       title: 'Testes de pressurização e estanqueidade',
       description:
         'Realizamos testes de pressurização e estanqueidade para garantir a eficiência e segurança dos sistemas de combate a incêndios.'
     },
     {
       image: two,
-      icon: Shield,
+      icon: Wrench,
       title: 'Inspeção e manutenção de  bombas e reservatórios',
       description:
         'Oferecemos serviços de inspeção e manutenção de bombas e reservatórios, assegurando o funcionamento contínuo e seguro dos sistemas de combate a incêndios.'
     },
     {
       image: one,
-      icon: Shield,
+      icon: RefreshCw,
       title: 'Limpeza e substituição de componentes',
       description:
         'Realizamos limpeza e substituição de componentes, garantindo o bom funcionamento e a longevidade dos sistemas de prevenção contra incêndios.'
