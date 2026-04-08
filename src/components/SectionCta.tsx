@@ -15,7 +15,7 @@ export default function SectionCta() {
           </p>
         </div>
         <button className={styles.button}>
-          <a href="https://wa.me/5541997430178" target="_blank">
+          <a href="https://wa.me/5541997430178?text=Ol%C3%A1%20vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento" target="_blank">
             Solicitar Orçamento
           </a>
         </button>

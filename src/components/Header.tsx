@@ -47,7 +47,7 @@ export function Header() {
             Entrar em contato
           </button> */}
           <a
-            href="https://wa.me/5541997430178"
+            href="https://wa.me/5541997430178?text=Ol%C3%A1%20vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block rounded-full bg-red-600 px-4 py-2 text-center text-white"
@@ -78,7 +78,7 @@ export function Header() {
             </Link> */}
             <div className="mt-4">
               <a
-                href="https://wa.me/5541997430178"
+                href="https://wa.me/5541997430178?text=Ol%C3%A1%20vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block rounded-full bg-red-600 px-4 py-2 text-center text-white"

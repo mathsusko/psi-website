@@ -40,7 +40,7 @@ export function Home() {
           </div>
           <div className="transition-all duration-300 ease-in-out hover:opacity-80">
             <a
-              href="https://wa.me/5541997430178"
+              href="https://wa.me/5541997430178?text=Ol%C3%A1%20vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento"
               className={styles.ctaButton}
               target="_blank"
               rel="noopener noreferrer"
@@ -86,7 +86,7 @@ export function Home() {
             description="Projetamos e implementamos redes de hidrantes, sprinklers, bombas de incêndio e sistemas de pressurização."
             imageSrc={imageThree} // Usando a imagem importada corretamente
             ctaText="Agendar Orçamento"
-            ctaLink="https://wa.me/5541997430276"
+            ctaLink="https://wa.me/5541997430276?text=Ol%C3%A1%20vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento"
             icon={<Flame className="text-2xl text-white" />}
           />
           <ServiceCard
@@ -94,7 +94,7 @@ export function Home() {
             description="Realizamos inspeções preventivas e corretivas, garantindo que cada equipamento funcione com precisão milimétrica."
             imageSrc={imageTwo} // Usando a imagem importada corretamente
             ctaText="Agendar Orçamento"
-            ctaLink="https://wa.me/5541997430276"
+            ctaLink="https://wa.me/5541997430276?text=Ol%C3%A1%20vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento"
             icon={<Wrench className="text-2xl text-white" />}
           />
           <ServiceCard
@@ -102,7 +102,7 @@ export function Home() {
             description="Desenvolvemos soluções sob medida para edificações de grande porte, assegurando conformidade com as regulamentações vigentes."
             imageSrc={imageOne} // Usando a imagem importada corretamente
             ctaText="Agendar Orçamento"
-            ctaLink="https://wa.me/5541997430276"
+            ctaLink="https://wa.me/5541997430276?text=Ol%C3%A1%20vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento"
             icon={<HardHat className="text-2xl text-white" />}
           />
         </div>
@@ -253,7 +253,7 @@ export function Home() {
               </div>
 
               <button className={styles.buttonCta}>
-                <a href="https://wa.me/5541997430178" className="text-xl sm:text-2xl">
+                <a href="https://wa.me/5541997430178?text=Ol%C3%A1%20vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento" className="text-xl sm:text-2xl">
                   <MessageCircle /> Agendar Orçamento
                 </a>
               </button>

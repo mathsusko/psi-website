@@ -61,7 +61,7 @@ export function WhoWeAre() {
           </div>
           <div>
             <a
-              href="https://wa.me/5541997430178"
+              href="https://wa.me/5541997430178?text=Ol%C3%A1%20vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento"
               className={styles.ctaButton}
               target="_blank"
               rel="noopener noreferrer"

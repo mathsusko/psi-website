@@ -3,6 +3,7 @@ import imageOne from '../../assets/service/image.jpg';
 import imageTwo from '../../assets/service/image-1.jpg';
 import imageThree from '../../assets/service/image-2.jpg';
 import imageFour from '../../assets/service/image-3.jpg';
+import { Link } from 'react-router-dom';
 import SectionCta from '@/components/SectionCta';
 import { Footer } from '@/components/Footer';
 export function Services() {
@@ -27,7 +28,7 @@ export function Services() {
             </p>
           </div>
           <div>
-            <a href="https://wa.me/5541997430178" className={styles.ctaButton} target="_blank">
+            <a href="https://wa.me/5541997430178?text=Ol%C3%A1%20vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento" className={styles.ctaButton} target="_blank">
               Solicitar Orçamento
             </a>
           </div>
@@ -55,7 +56,7 @@ export function Services() {
             <div className={styles.info}>
               <p>Projeto e Consultoria</p>
               <span>
-                <a href="/services/project-consultancy">Leia sobre</a>
+                <Link to="/services/project-consultancy">Leia sobre</Link>
               </span>
             </div>
           </div>
@@ -65,7 +66,7 @@ export function Services() {
             <div className={styles.info}>
               <p>Instalação de Sistemas</p>
               <span>
-                <a href="/services/system-installation">Leia sobre</a>
+                <Link to="/services/system-installation">Leia sobre</Link>
               </span>
             </div>
           </div>
@@ -75,7 +76,7 @@ export function Services() {
             <div className={styles.info}>
               <p>Manutenção e Testes</p>
               <span>
-                <a href="/services/maintenance-tests">Leia sobre</a>
+                <Link to="/services/maintenance-tests">Leia sobre</Link>
               </span>
             </div>
           </div>
@@ -85,7 +86,7 @@ export function Services() {
             <div className={styles.info}>
               <p>Regularização e Certificação</p>
               <span>
-                <a href="/services/certification">Leia sobre</a>
+                <Link to="/services/certification">Leia sobre</Link>
               </span>
             </div>
           </div>
