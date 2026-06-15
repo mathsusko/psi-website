@@ -72,18 +72,19 @@
 }
 
 .hero .ctaButton {
-  background-color: var(--red-900); /* Cor do botão */
+  background-color: var(--red-900);
   color: white;
   padding: 12px 32px;
   border-radius: 50px;
   font-size: 1rem;
   text-decoration: none;
   display: inline-block;
-  transition: background-color 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.hero .cta-button:hover {
-  background-color: var(--primary-color); /* Cor ao passar o mouse */
+.hero .ctaButton:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.65);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 390px) {

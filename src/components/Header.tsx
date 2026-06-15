@@ -50,7 +50,7 @@ export function Header() {
             href="https://wa.me/5541997430178?text=Ol%C3%A1%20vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block rounded-full bg-red-600 px-4 py-2 text-center text-white"
+            className="inline-block rounded-full bg-red-600 px-4 py-2 text-center text-white transition-all duration-300 hover:shadow-[0_8px_28px_rgba(0,0,0,0.65)] hover:-translate-y-0.5"
           >
             Entrar em contato
           </a>
@@ -81,7 +81,7 @@ export function Header() {
                 href="https://wa.me/5541997430178?text=Ol%C3%A1%20vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block rounded-full bg-red-600 px-4 py-2 text-center text-white"
+                className="inline-block rounded-full bg-red-600 px-4 py-2 text-center text-white transition-all duration-300 hover:shadow-[0_8px_28px_rgba(0,0,0,0.65)] hover:-translate-y-0.5"
               >
                 Entrar em contato
               </a>

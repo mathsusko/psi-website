@@ -7,14 +7,14 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh; /* Ajuste de altura conforme necessário */
+  height: 100vh;
   background-image: url('../../assets/service/bg.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff; /* Texto claro sobre o fundo escuro */
+  color: #fff;
 }
 
 .heroOverlay {
@@ -23,7 +23,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Sobreposição para melhorar legibilidade */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .heroContent {
@@ -33,13 +33,10 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  z-index: 1; /* Garante que o conteúdo fique acima da sobreposição */
+  z-index: 1;
   gap: 32px;
 }
-.heroContent .footer {
-  display: flex;
-  justify-content: center;
-}
+
 .heroContent .hat {
   display: inline-block;
   background: var(--red-900);
@@ -50,17 +47,21 @@
 .hat p {
   font-size: 12px;
 }
+
 .hero .title {
   padding: 22px 0;
   text-align: center;
   max-width: 1200px;
 }
+
 .heroContent .title {
   text-transform: uppercase;
 }
+
 .heroContent .title h1 {
   font-size: 3rem !important;
 }
+
 .hero .title h1 {
   font-family: 'SF Pro', sans-serif;
   font-stretch: expanded;
@@ -69,6 +70,7 @@
   margin-bottom: 1.5rem;
   line-height: 100%;
 }
+
 @media screen and (min-width: 390px) {
   .hero .heroContent .title > h1 {
     font-size: 1.875rem;
@@ -84,8 +86,9 @@
   font-size: 1.25rem;
 }
 
-.hero .ctaButton {
-  background-color: var(--red-900); /* Cor do botão */
+/* ── Botão CTA ── */
+.ctaButton {
+  background-color: var(--red-900);
   color: white;
   padding: 12px 32px;
   border-radius: 50px;
@@ -95,10 +98,11 @@
   transition: background-color 0.3s ease;
 }
 
-.hero .cta-button:hover {
-  background-color: var(--primary-color); /* Cor ao passar o mouse */
+.ctaButton:hover {
+  background-color: #cc0000;
 }
 
+/* ── Seção de cards ── */
 .services {
   max-width: 1440px;
   margin: 72px auto;
@@ -111,6 +115,7 @@
   max-width: 700px !important;
   margin-bottom: 32px;
 }
+
 .serviceTitle h1 {
   font-size: 40px;
   font-family: 'SF Pro', sans-serif;
@@ -127,11 +132,12 @@
 
 .serviceCards {
   display: flex;
-  flex-wrap: wrap; /* Permite quebra em telas pequenas */
+  flex-wrap: wrap;
   justify-content: space-around;
   gap: 32px;
   padding: 16px;
 }
+
 @media screen and (min-width: 390px) {
   .serviceTitle {
     width: 100%;
@@ -148,14 +154,13 @@
   .serviceCards {
     gap: 12px;
   }
-  .serviceCards .card:nth-child {
-    margin-top: 0px;
-  }
   .serviceCards .card {
     margin-top: 0 !important;
   }
 }
-.serviceCards .card {
+
+/* ── Card base ── */
+.card {
   padding: 12px;
   border-radius: 12px;
   background: linear-gradient(180deg, #7c0e0e 0%, #1a1a1a 100%);
@@ -163,33 +168,57 @@
   flex-direction: column;
   gap: 22px;
   margin-top: 64px;
-  width: calc(25% - 24px); /* 4 cards por linha com gap */
-  min-width: 250px; /* Para evitar ficar muito estreito */
+  width: calc(25% - 24px);
+  min-width: 250px;
   box-sizing: border-box;
 }
 
 @media (max-width: 1024px) {
-  .serviceCards .card {
-    width: calc(50% - 24px); /* 2 por linha em tablets */
+  .card {
+    width: calc(50% - 24px);
   }
 }
 
 @media (max-width: 640px) {
-  .serviceCards .card {
-    width: 100%; /* 1 por linha em mobile */
+  .card {
+    width: 100%;
   }
 }
-.card img {
-  border-radius: 12px;
-  width: 100%;
-  height: auto;
+
+/* ── Card clicável (Link) ── */
+.cardLink {
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
+.cardLink:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.75);
+}
+
+/* ── Imagem do card ── */
+.cardImage {
+  border-radius: 12px;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+/* ── Info do card ── */
 .card .info {
   color: var(--white);
   padding: 12px;
 }
 
+.info p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
 .info span {
-  font-size: 12px;
+  font-size: 13px;
+  opacity: 0.75;
 }

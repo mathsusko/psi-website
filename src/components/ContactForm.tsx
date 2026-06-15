@@ -159,7 +159,7 @@ export function ContactForm() {
             <div className="col-span-2 mt-8">
               <Button
                 type="submit"
-                className="w-full rounded-md bg-red-700 py-3 font-semibold text-white transition-all hover:bg-red-800"
+                className="w-full rounded-md bg-red-700 py-3 font-semibold text-white transition-all duration-300 hover:bg-red-800 hover:shadow-[0_8px_28px_rgba(0,0,0,0.65)] hover:-translate-y-0.5"
               >
                 Enviar
               </Button>
