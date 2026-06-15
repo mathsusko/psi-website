@@ -37,9 +37,16 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .serviceCards {
-    grid-template-columns: 1fr; /* 1 coluna em celulares */
-    padding: 0;
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+    gap: 20px;
+  }
+
+  .servicesInclude {
+    margin: 64px auto;
+    gap: 32px;
+    padding: 0 16px;
   }
 }

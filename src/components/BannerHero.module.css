@@ -87,7 +87,7 @@
   transform: translateY(-2px);
 }
 
-@media (max-width: 390px) {
+@media (max-width: 768px) {
   .heroContent {
     padding-left: 16px;
     padding-right: 16px;
@@ -100,7 +100,7 @@
   }
 
   .hero .title h1 {
-    font-size: 1.75rem; /* Reduzido para caber melhor */
+    font-size: 1.75rem;
     line-height: 1.2;
   }
 

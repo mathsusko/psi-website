@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 import logo from '../assets/logo2.png';
 export function Footer() {
@@ -18,23 +19,17 @@ export function Footer() {
               <p>Páginas</p>
               <ul>
                 <li>
-                  <a href="/">Página Inicial</a>
-                </li>
-                {/* <li>
-                  <a href="/contact">Contatos</a>
-                </li> */}
-                <li>
-                  <a href="/who-we-are">Quem somos</a>
+                  <Link to="/">Página Inicial</Link>
                 </li>
                 <li>
-                  <a href="/clients">Clientes</a>
+                  <Link to="/who-we-are">Quem somos</Link>
                 </li>
                 <li>
-                  <a href="/services">Serviços</a>
+                  <Link to="/clients">Clientes</Link>
                 </li>
-                {/* <li>
-                  <a href="/contact">Contato</a>
-                </li> */}
+                <li>
+                  <Link to="/services">Serviços</Link>
+                </li>
               </ul>
             </div>
 
@@ -42,7 +37,13 @@ export function Footer() {
               <p>Social</p>
               <ul>
                 <li>
-                  <a href="https://www.instagram.com/previncendiopsi/">Instagram</a>
+                  <a
+                    href="https://www.instagram.com/previncendiopsi/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Instagram
+                  </a>
                 </li>
                 {/* <li>
                   <a href="#">Facebook</a>

@@ -1,8 +1,7 @@
 footer {
-  background-image: url('../assets/home/footer.jpg');
-  background-repeat: no-repeat;
-  background-size: cover; /* 👈 cobre toda a área */
-  background-position: center; /* 👈 centraliza */
+  background: linear-gradient(135deg, #6b0f0f 0%, #3d0000 100%);
+  position: relative;
+  z-index: 10;
 }
 
 .footer {
@@ -57,6 +56,13 @@ footer {
 }
 .links .link ul > li > a {
   font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.links .link ul > li > a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
 }
 
 .links .map {

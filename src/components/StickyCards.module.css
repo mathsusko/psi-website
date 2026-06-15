@@ -1,0 +1,268 @@
+/* ══════════════════════════════
+   HEADER
+══════════════════════════════ */
+.header {
+  background: #f9fafb;
+  color: #141414;
+  padding: 80px 24px 56px;
+  width: 100%;
+}
+
+.headerInner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.hat {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #141414;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hat span {
+  font-size: 1.4rem;
+  white-space: nowrap;
+}
+
+.hat p {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  padding-left: 8px;
+  opacity: 0.6;
+  text-transform: none;
+  text-align: left;
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 700px;
+}
+
+.titleBlock h1 {
+  font-family: 'SF Pro', sans-serif;
+  font-stretch: expanded;
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.titleBlock p {
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+/* ══════════════════════════════
+   WRAPPER STICKY (desktop)
+══════════════════════════════ */
+.stickyCards {
+  position: relative;
+  width: 100%;
+  background-image: url('../assets/home/bgCta.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ══════════════════════════════
+   CARD — desktop (sticky 3D)
+══════════════════════════════ */
+.card {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100svh;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.cardInner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 100%;
+  will-change: transform;
+  background: linear-gradient(135deg, #6b0f0f 0%, #3d0000 100%);
+  overflow: hidden;
+}
+
+/* Overlay escurecimento no scroll */
+.cardInner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+  background-color: #000;
+  opacity: var(--after-opacity, 0);
+  will-change: opacity;
+}
+
+/* ══════════════════════════════
+   CONTEÚDO DO CARD
+══════════════════════════════ */
+.cardLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 64px 72px;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+}
+
+.cardTag {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #ff4444;
+  font-weight: 600;
+}
+
+.cardTitle {
+  font-family: 'SF Pro', sans-serif;
+  font-stretch: expanded;
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.cardDescription {
+  font-size: clamp(0.875rem, 1.1vw, 1rem);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 440px;
+}
+
+/* Imagem */
+.cardImg {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.cardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.card:hover .cardImg img {
+  transform: scale(1.04);
+}
+
+/* ══════════════════════════════
+   MOBILE  ≤ 899px
+   — desativa sticky/3D, vira
+     lista de cards empilhados
+══════════════════════════════ */
+@media (max-width: 899px) {
+
+  /* Header */
+  .header {
+    padding: 56px 20px 40px;
+  }
+
+  .hat {
+    gap: 8px;
+  }
+
+  .hat span {
+    font-size: 1.1rem;
+  }
+
+  /* Wrapper vira flow normal */
+  .stickyCards {
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  /* Card estático, sem sticky, sem 3D */
+  .card {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+    transform-style: flat;
+    perspective: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  /* Layout: imagem em cima, texto embaixo */
+  .cardInner {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: unset !important;
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+
+  /* Imagem ocupa altura fixa */
+  .cardImg {
+    height: 260px;
+    flex-shrink: 0;
+    order: 0;
+  }
+
+  /* Texto abaixo da imagem */
+  .cardLeft {
+    order: 1;
+    padding: 32px 20px 40px;
+    gap: 14px;
+  }
+
+  .cardTitle {
+    font-size: 1.75rem;
+  }
+
+  .cardDescription {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+
+  /* Remove overlay de escurecimento em mobile */
+  .cardInner::after {
+    display: none;
+  }
+}
+
+/* ══════════════════════════════
+   TABLET  900px – 1100px
+══════════════════════════════ */
+@media (min-width: 900px) and (max-width: 1100px) {
+  .cardLeft {
+    padding: 48px 40px;
+  }
+
+  .cardTitle {
+    font-size: 2.5rem;
+  }
+}

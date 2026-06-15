@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
   margin: 128px auto;
+  padding: 0 16px;
 }
 
 .body {
@@ -25,6 +26,7 @@
   max-width: 1440px;
   color: var(--white);
 }
+
 .body .pill {
   display: inline-block;
   background: var(--red-900);
@@ -34,12 +36,14 @@
   max-width: 100%;
   font-size: 12px;
 }
+
 .section .info {
   display: flex;
   flex-direction: column;
   gap: 12px;
   width: 700px;
 }
+
 .info h1 {
   font-family: 'SF Pro', sans-serif;
   font-stretch: expanded;
@@ -48,6 +52,7 @@
   color: white;
   line-height: 100%;
 }
+
 .pill span {
   color: var(--white);
 }
@@ -67,11 +72,11 @@
   transform: translateY(-2px);
 }
 
-@media (max-width: 390px) {
+@media (max-width: 768px) {
   .section {
     width: 100%;
-    padding: 0;
-    margin: 0 !important;
+    padding: 0 16px;
+    margin: 48px auto;
   }
 
   .body {
@@ -81,60 +86,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 32px 16px !important;
-    border-radius: 8px !important;
+    padding: 48px 24px;
+    border-radius: 12px;
   }
 
   .body .pill {
-    font-size: 8px;
+    font-size: 10px;
     padding: 4px 10px;
   }
+
   .info {
-    width: 300px !important;
-  }
-  .info h1 {
-    font-size: 1rem;
-    line-height: 1.2;
+    width: 100% !important;
     text-align: center;
   }
 
-  .info p {
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .button {
-    padding: 10px 24px;
-    font-size: 0.9rem;
-  }
-}
-@media screen and (max-width: 800px) {
-  .section {
-    width: 100%;
-    margin: 0;
-    border-radius: 0 !important;
-  }
-
-  .body {
-    width: 100%;
-    gap: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 64px 64px !important;
-    border-radius: 0 !important;
-  }
-
-  .body .pill {
-    font-size: 8px;
-    padding: 4px 10px;
-  }
-  .info {
-    width: 300px !important;
-  }
   .info h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     text-align: center;
   }
@@ -150,20 +117,24 @@
   }
 }
 
-@media screen and (max-width: 1220px) {
+@media screen and (min-width: 769px) and (max-width: 1220px) {
   .section {
     width: 100%;
-    margin: 0;
-    border-radius: 0 !important;
+    margin: 64px auto;
+    padding: 0 16px;
   }
+
   .body {
     width: 100%;
-    gap: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 64px 64px !important;
-    border-radius: 0 !important;
+    padding: 80px 48px;
+    border-radius: 12px;
+  }
+
+  .info {
+    width: 100% !important;
+  }
+
+  .info h1 {
+    font-size: 2rem;
   }
 }

@@ -64,9 +64,27 @@
   line-height: 1.1;
   margin-bottom: 1.5rem;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
+  .heroContent {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .title h1 {
     font-size: 2rem;
+  }
+
+  .title p {
+    font-size: 1rem;
+  }
+
+  .ctaButton {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.875rem 1rem;
   }
 }
 
@@ -116,17 +134,15 @@
 }
 
 .hatDif {
-  display: inline-flex;
-  gap: 10px;
+  display: flex;
+  gap: 8px;
   align-items: center;
   color: var(--white);
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 6px 14px;
-  border-radius: 999px;
-  backdrop-filter: blur(4px);
-  width: fit-content;
-  margin-bottom: 8px;
+  margin-bottom: 22px;
+}
+
+.hatDif > span {
+  font-size: 1.5rem;
 }
 
 .service .hat > .hatEsq {
@@ -148,15 +164,24 @@
 
 @media (max-width: 768px) {
   .services {
-    padding: 40px 10px;
+    padding: 40px 16px;
   }
 
   .grid {
-    grid-template-columns: 1fr; /* Para telas pequenas, 1 coluna */
+    grid-template-columns: 1fr;
   }
 
   .verMais {
     display: none;
+  }
+
+  .service {
+    text-align: center;
+    align-items: center;
+  }
+
+  .service .hat {
+    justify-content: center;
   }
 }
 
@@ -259,10 +284,11 @@
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 768px) {
   .clients {
-    border-radius: 0 !important;
-    margin: 0;
+    border-radius: 12px !important;
+    margin: 0 16px;
+    width: calc(100% - 32px);
   }
   .clientBody {
     padding: 32px 16px;
@@ -306,7 +332,7 @@
 }
 
 .bodyDif {
-  max-width: 1240px;
+  max-width: 1440px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -328,16 +354,16 @@
   .hatDif > span {
     font-size: 12px;
     line-height: 100%;
-    width: 70px;
   }
   .hatDif > p {
     font-size: 12px;
     line-height: 100%;
   }
-  .hatDif {
-  }
   .difBody {
     margin-bottom: 32px;
+  }
+  .titleDif > h1 {
+    font-size: 22px;
   }
 }
 .difHeader {
@@ -357,32 +383,23 @@
 .titleDif {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   color: var(--white);
-  font-size: 40px !important;
-  font-weight: 600;
-  font-family: 'SF Pro', sans-serif;
-  font-stretch: expanded;
-  line-height: 1;
-  max-width: 620px;
-  padding-bottom: 24px;
-  border-bottom: 2px solid rgba(255, 60, 60, 0.5);
-  margin-bottom: 8px;
+  max-width: 550px;
 }
 
 .titleDif > h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  font-family: 'SF Pro', sans-serif;
+  font-stretch: expanded;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 100%;
 }
 
 .titleDif > p {
-  max-width: 550px;
   font-size: 1rem;
-  font-weight: 400;
-  opacity: 0.8;
   line-height: 1.6;
+  opacity: 0.85;
 }
 
 .difCards {
